@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class RouteModel {
+@objc class RouteModel: NSObject {
     
     let name: String
     let rating: Int64
