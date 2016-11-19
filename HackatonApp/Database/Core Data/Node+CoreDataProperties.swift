@@ -19,6 +19,7 @@ extension Node {
     @NSManaged public var obj_id: Int64
     @NSManaged public var pin: String
     @NSManaged public var time: String
+    @NSManaged public var coordinate: String
     @NSManaged public var routs: Set<Route>?
 
 }

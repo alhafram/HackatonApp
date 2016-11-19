@@ -6,6 +6,7 @@
         <relationship name="routs" toMany="YES" deletionRule="Nullify" destinationEntity="Route" inverseName="gallery" inverseEntity="Route" syncable="YES"/>
     </entity>
     <entity name="Node" representedClassName=".Node" syncable="YES">
+        <attribute name="coordinate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="obj_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="pin" attributeType="String" syncable="YES"/>
@@ -32,7 +33,7 @@
     <elements>
         <element name="RouteCategory" positionX="-261" positionY="108" width="128" height="88"/>
         <element name="Gallery" positionX="207" positionY="-36" width="128" height="88"/>
-        <element name="Node" positionX="180" positionY="153" width="128" height="118"/>
+        <element name="Node" positionX="180" positionY="153" width="128" height="133"/>
         <element name="Route" positionX="-63" positionY="-18" width="128" height="193"/>
     </elements>
 </model>

@@ -84,13 +84,14 @@ import CoreData
     
     @objc @discardableResult func addNodeEntity(
         obj_id: Int64, name: String, time: String,
-        pin: String) -> Node {
+        pin: String, coordinate: String) -> Node {
         
         let node = NSEntityDescription.insertNewObject(
             forEntityName: "Node",
             into: CoreDataManager.instance.managedObjectContext) as! Node
         
         node.obj_id = obj_id
+        node.coordinate = coordinate
         node.name = name
         node.time = time
         node.pin = pin

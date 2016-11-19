@@ -54,7 +54,8 @@
         Node* node = [[Database instance] addNodeEntityWithObj_id:[dict[@"id"] integerValue]
                                                 name:dict[@"name"]
                                                 time:dict[@"time"]
-                                                 pin:dict[@"pinPicture"]];
+                                                 pin:dict[@"pinPicture"]
+                                                 coordinate:dict[@"coordinates"]];
         [nodesSet addObject:node];
     }
 
