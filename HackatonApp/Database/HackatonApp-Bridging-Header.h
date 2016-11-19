@@ -1,2 +1,3 @@
 #import "HASaveManager.h"
-#import 
+#import "HAFeedCell.h"
+#import "MapViewController.h"

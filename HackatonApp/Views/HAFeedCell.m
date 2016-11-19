@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel* titleLbl;
 @property (weak, nonatomic) IBOutlet UILabel* timeLbl;
 @property (weak, nonatomic) IBOutlet UILabel* ratingLbl;
+@property (weak, nonatomic) IBOutlet UIImageView* bgrImageView;
 
 @end
 
@@ -35,6 +36,7 @@
     [_timeLbl setText:[NSString stringWithFormat:@"%lld", routeModel.duration]];
     // TODO- настройка шрифта для рэйтинга
     [_ratingLbl setText:routeModel.name];
+    [_bgrImageView setImage:routeModel.cover];
 }
 
 @end
