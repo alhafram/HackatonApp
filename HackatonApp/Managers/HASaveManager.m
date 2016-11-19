@@ -22,12 +22,14 @@
     return sharedInstance;
 }
 
-- (void)saveImage:(UIImage *)image byName:(NSString *)imageName {
+- (void)saveImageByName:(NSString *)imageName {
     NSError* error = nil;
     
     if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
         [[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:NO attributes:nil error:&error];
     }
+    
+    NSLog(@"path: %@", path);
     
     NSString* fileName = [path stringByAppendingFormat:@"/%@", imageName];
     NSData * binaryImageData = [NSData dataWithContentsOfURL:[NSURL URLWithString: [NSString stringWithFormat:@"%@%@", kHAServerImagesPath, imageName]]];
@@ -35,7 +37,13 @@
 }
 
 - (UIImage *)getImageByName:(NSString *)imageName {
-    return [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", path, imageName]];
+    NSString* fileName = [path stringByAppendingFormat:@"/%@", imageName];
+    
+    if (![[NSFileManager defaultManager] fileExistsAtPath:fileName]) {
+        return [UIImage imageNamed:@"picture_placeholder"];
+    } else {
+        return [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", path, imageName]];
+    }
 }
 
 @end

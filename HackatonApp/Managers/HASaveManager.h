@@ -12,7 +12,7 @@
 @interface HASaveManager : NSObject
 
 + (HASaveManager *)sharedInstance;
-- (void)saveImage:(UIImage *)image byName:(NSString *)imageName;
+- (void)saveImageByName:(NSString *)imageName;
 - (UIImage *)getImageByName:(NSString *)imageName;
 
 @end

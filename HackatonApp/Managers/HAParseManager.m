@@ -7,6 +7,7 @@
 //
 
 #import "HAParseManager.h"
+#import "HASaveManager.h"
 #import "HackatonApp-Swift.h"
 
 @implementation HAParseManager
@@ -22,6 +23,8 @@
 
 - (void)parseRouteDictionary:(NSDictionary *)responseData {
     
+    [[Database instance] resetDatabase];
+    
     NSArray* pointsArray = responseData[@"points"];
     NSArray* routesArray = responseData[@"routes"];
     NSArray* categoriesArray = responseData[@"categories"];
@@ -32,7 +35,11 @@
     NSMutableSet* nodesSet = [NSMutableSet new];
     
     for (NSDictionary* dict in picturesArray) {
-        Gallery* gallery = [[Database instance] addGalleryEntityWithImage:dict[@"url"]
+        
+        NSString* imageName = [dict[@"url"] lastPathComponent];
+        [[HASaveManager sharedInstance] saveImageByName:imageName];
+        
+        Gallery* gallery = [[Database instance] addGalleryEntityWithImage:imageName
                                                                    obj_id:[dict[@"id"] integerValue]];
         [gallerySet addObject:gallery];
     }
@@ -53,6 +60,9 @@
 
     for (NSDictionary* dict in routesArray) {
         
+        NSString* imageName = [dict[@"cover"] lastPathComponent];
+        [[HASaveManager sharedInstance] saveImageByName:imageName];
+        
         [[Database instance] addRouteEntityWithName:dict[@"name"]
                                              rating:[dict[@"rating"] floatValue]
                                            duration:[dict[@"duration"] integerValue]
@@ -65,7 +75,7 @@
                                            category:categoriesSet];
     }
     
-    [[Database instance] resetDatabase];
+    [[Database instance] printDatabase];
 }
 
 @end
