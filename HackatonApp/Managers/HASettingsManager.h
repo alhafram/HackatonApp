@@ -12,7 +12,7 @@
 
 @property (strong, nonatomic) NSArray* categories;
 
-+ (id) sharedManager;
++ (HASettingsManager*) sharedManager;
 
 - (void) setCategories:(NSArray*) categories withName:(NSString*) keyName;
 - (NSArray*) getCategories:(NSString*) name;

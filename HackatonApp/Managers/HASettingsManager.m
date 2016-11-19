@@ -10,9 +10,9 @@
 
 @implementation HASettingsManager
 
-+ (id)sharedManager {
++ (HASettingsManager*) sharedManager {
     
-    static HASettingsManager *sharedMyManager = nil;
+    static HASettingsManager* sharedMyManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedMyManager = [[self alloc] init];
