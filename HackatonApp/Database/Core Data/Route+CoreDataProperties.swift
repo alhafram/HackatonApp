@@ -23,9 +23,9 @@ extension Route {
     @NSManaged public var cover: String
     @NSManaged public var obj_id: Int64
     @NSManaged public var descr: String
-    @NSManaged public var points: Set<Point>
+    @NSManaged public var points: Set<Node>
     @NSManaged public var gallery: Set<Gallery>
-    @NSManaged public var category: Set<Category>
+    @NSManaged public var category: Set<RouteCategory>
 
 }
 
@@ -33,10 +33,10 @@ extension Route {
 extension Route {
 
     @objc(addPointsObject:)
-    @NSManaged public func addToPoints(_ value: Point)
+    @NSManaged public func addToPoints(_ value: Node)
 
     @objc(removePointsObject:)
-    @NSManaged public func removeFromPoints(_ value: Point)
+    @NSManaged public func removeFromPoints(_ value: Node)
 
     @objc(addPoints:)
     @NSManaged public func addToPoints(_ values: Set<Route>)
@@ -67,10 +67,10 @@ extension Route {
 extension Route {
 
     @objc(addCategoryObject:)
-    @NSManaged public func addToCategory(_ value: Category)
+    @NSManaged public func addToCategory(_ value: RouteCategory)
 
     @objc(removeCategoryObject:)
-    @NSManaged public func removeFromCategory(_ value: Category)
+    @NSManaged public func removeFromCategory(_ value: RouteCategory)
 
     @objc(addCategory:)
     @NSManaged public func addToCategory(_ values: NSSet)

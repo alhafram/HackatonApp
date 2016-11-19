@@ -25,10 +25,10 @@
 		506355461DE01ED600AEC84B /* HASettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 506355451DE01ED600AEC84B /* HASettingsManager.m */; };
 		64CB7BE1D20E4FFF6AE11499 /* libPods-HackatonApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */; };
 		D709A2581DE01FD400F42086 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2571DE01FD400F42086 /* CoreDataManager.swift */; };
-		D709A2611DE0281100F42086 /* Point+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2591DE0281100F42086 /* Point+CoreDataClass.swift */; };
-		D709A2621DE0281100F42086 /* Point+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25A1DE0281100F42086 /* Point+CoreDataProperties.swift */; };
-		D709A2631DE0281100F42086 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25B1DE0281100F42086 /* Category+CoreDataClass.swift */; };
-		D709A2641DE0281100F42086 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25C1DE0281100F42086 /* Category+CoreDataProperties.swift */; };
+		D709A2611DE0281100F42086 /* Node+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2591DE0281100F42086 /* Node+CoreDataClass.swift */; };
+		D709A2621DE0281100F42086 /* Node+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25A1DE0281100F42086 /* Node+CoreDataProperties.swift */; };
+		D709A2631DE0281100F42086 /* RouteCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25B1DE0281100F42086 /* RouteCategory+CoreDataClass.swift */; };
+		D709A2641DE0281100F42086 /* RouteCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25C1DE0281100F42086 /* RouteCategory+CoreDataProperties.swift */; };
 		D709A2651DE0281100F42086 /* Gallery+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25D1DE0281100F42086 /* Gallery+CoreDataClass.swift */; };
 		D709A2661DE0281100F42086 /* Gallery+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25E1DE0281100F42086 /* Gallery+CoreDataProperties.swift */; };
 		D709A2671DE0281100F42086 /* Route+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25F1DE0281100F42086 /* Route+CoreDataClass.swift */; };
@@ -72,10 +72,10 @@
 		9376501FD978EF51448B65F7 /* Pods-HackatonApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D4C6DEB739557E9E51A7FD3E /* Pods-HackatonApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.release.xcconfig"; sourceTree = "<group>"; };
 		D709A2571DE01FD400F42086 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		D709A2591DE0281100F42086 /* Point+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+CoreDataClass.swift"; sourceTree = "<group>"; };
-		D709A25A1DE0281100F42086 /* Point+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		D709A25B1DE0281100F42086 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
-		D709A25C1DE0281100F42086 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D709A2591DE0281100F42086 /* Node+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Node+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D709A25A1DE0281100F42086 /* Node+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Node+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D709A25B1DE0281100F42086 /* RouteCategory+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RouteCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D709A25C1DE0281100F42086 /* RouteCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RouteCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D709A25D1DE0281100F42086 /* Gallery+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gallery+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D709A25E1DE0281100F42086 /* Gallery+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gallery+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D709A25F1DE0281100F42086 /* Route+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Route+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -270,10 +270,10 @@
 		D709A2561DE01F8200F42086 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				D709A2591DE0281100F42086 /* Point+CoreDataClass.swift */,
-				D709A25A1DE0281100F42086 /* Point+CoreDataProperties.swift */,
-				D709A25B1DE0281100F42086 /* Category+CoreDataClass.swift */,
-				D709A25C1DE0281100F42086 /* Category+CoreDataProperties.swift */,
+				D709A2591DE0281100F42086 /* Node+CoreDataClass.swift */,
+				D709A25A1DE0281100F42086 /* Node+CoreDataProperties.swift */,
+				D709A25B1DE0281100F42086 /* RouteCategory+CoreDataClass.swift */,
+				D709A25C1DE0281100F42086 /* RouteCategory+CoreDataProperties.swift */,
 				D709A25D1DE0281100F42086 /* Gallery+CoreDataClass.swift */,
 				D709A25E1DE0281100F42086 /* Gallery+CoreDataProperties.swift */,
 				D709A25F1DE0281100F42086 /* Route+CoreDataClass.swift */,
@@ -413,20 +413,20 @@
 				5063552C1DDFD8F800AEC84B /* AppDelegate.m in Sources */,
 				506355461DE01ED600AEC84B /* HASettingsManager.m in Sources */,
 				506355351DDFD8F800AEC84B /* HackatonApp.xcdatamodeld in Sources */,
-				D709A2631DE0281100F42086 /* Category+CoreDataClass.swift in Sources */,
+				D709A2631DE0281100F42086 /* RouteCategory+CoreDataClass.swift in Sources */,
 				D709A2671DE0281100F42086 /* Route+CoreDataClass.swift in Sources */,
 				04E85D251DE0165B007DA2E7 /* HANetworkManager.m in Sources */,
 				04E85D3F1DE030F0007DA2E7 /* HANMCategoriesComponent.m in Sources */,
 				04E85D2B1DE01C98007DA2E7 /* HANMBaseComponent.m in Sources */,
 				04E85D391DE0258B007DA2E7 /* HASaveManager.m in Sources */,
 				04C335B71DE0050C005D633B /* Database.swift in Sources */,
-				D709A2641DE0281100F42086 /* Category+CoreDataProperties.swift in Sources */,
+				D709A2641DE0281100F42086 /* RouteCategory+CoreDataProperties.swift in Sources */,
 				04E85D351DE01D9D007DA2E7 /* NSDictionary+Helper.m in Sources */,
-				D709A2611DE0281100F42086 /* Point+CoreDataClass.swift in Sources */,
+				D709A2611DE0281100F42086 /* Node+CoreDataClass.swift in Sources */,
 				506355291DDFD8F800AEC84B /* main.m in Sources */,
 				D709A2661DE0281100F42086 /* Gallery+CoreDataProperties.swift in Sources */,
 				D709A2581DE01FD400F42086 /* CoreDataManager.swift in Sources */,
-				D709A2621DE0281100F42086 /* Point+CoreDataProperties.swift in Sources */,
+				D709A2621DE0281100F42086 /* Node+CoreDataProperties.swift in Sources */,
 				04E85D321DE01D78007DA2E7 /* HAErrorHelper.m in Sources */,
 				D709A26A1DE02C8B00F42086 /* Extansions.swift in Sources */,
 			);
