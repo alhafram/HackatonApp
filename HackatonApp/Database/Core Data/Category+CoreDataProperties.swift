@@ -18,7 +18,7 @@ extension Category {
 
     @NSManaged public var obj_id: Int64
     @NSManaged public var name: String
-    @NSManaged public var routs: Set<Route>
+    @NSManaged public var routs: Set<Route>?
 
 }
 

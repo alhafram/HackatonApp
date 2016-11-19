@@ -17,7 +17,7 @@ extension Gallery {
 
     @NSManaged public var image: String
     @NSManaged public var obj_id: Int64
-    @NSManaged public var routs: Set<Route>
+    @NSManaged public var routs: Set<Route>?
 
 }
 

@@ -19,7 +19,7 @@ extension Point {
     @NSManaged public var name: String
     @NSManaged public var time: String
     @NSManaged public var pin: String
-    @NSManaged public var routs: Set<Route>
+    @NSManaged public var routs: Set<Route>?
 
 }
 
