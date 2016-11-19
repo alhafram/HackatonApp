@@ -20,12 +20,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-        NSLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
+//    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+//        NSLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
+//    }];
+//    
+//    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    
+    HANMRoutesComponent* r = [[HANMRoutesComponent alloc] initWithNetManager:[HANetworkManager sharedInstance]];
+    [r getAllRouteseWithCompletionBlock:^(BOOL success, NSError *error, id responseData) {
+        [[HAParseManager sharedInstance] parseRouteDictionary:responseData];
     }];
-    
-    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
-    
+
     return YES;
 }
 
