@@ -20,6 +20,7 @@
 		506355371DDFD8F800AEC84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506355361DDFD8F800AEC84B /* Assets.xcassets */; };
 		5063553A1DDFD8F800AEC84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506355381DDFD8F800AEC84B /* LaunchScreen.storyboard */; };
 		64CB7BE1D20E4FFF6AE11499 /* libPods-HackatonApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */; };
+		D709A2581DE01FD400F42086 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2571DE01FD400F42086 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		5063553B1DDFD8F800AEC84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9376501FD978EF51448B65F7 /* Pods-HackatonApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D4C6DEB739557E9E51A7FD3E /* Pods-HackatonApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.release.xcconfig"; sourceTree = "<group>"; };
+		D709A2571DE01FD400F42086 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HackatonApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 		04C335B21DE004F0005D633B /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				D709A2561DE01F8200F42086 /* Core Data */,
 				04C335B61DE0050C005D633B /* Database.swift */,
 				04C335B51DE0050B005D633B /* HackatonApp-Bridging-Header.h */,
 			);
@@ -217,6 +220,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D709A2561DE01F8200F42086 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				D709A2571DE01FD400F42086 /* CoreDataManager.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -348,6 +359,7 @@
 				04C335B71DE0050C005D633B /* Database.swift in Sources */,
 				04E85D351DE01D9D007DA2E7 /* NSDictionary+Helper.m in Sources */,
 				506355291DDFD8F800AEC84B /* main.m in Sources */,
+				D709A2581DE01FD400F42086 /* CoreDataManager.swift in Sources */,
 				04E85D321DE01D78007DA2E7 /* HAErrorHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
