@@ -9,22 +9,22 @@
 import Foundation
 import CoreData
 
-extension Point {
+extension Node {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Point> {
-        return NSFetchRequest<Point>(entityName: "Point");
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<Node> {
+        return NSFetchRequest<Node>(entityName: "Node");
     }
 
-    @NSManaged public var obj_id: Int64
     @NSManaged public var name: String
-    @NSManaged public var time: String
+    @NSManaged public var obj_id: Int64
     @NSManaged public var pin: String
+    @NSManaged public var time: String
     @NSManaged public var routs: Set<Route>?
 
 }
 
 // MARK: Generated accessors for routs
-extension Point {
+extension Node {
 
     @objc(addRoutsObject:)
     @NSManaged public func addToRouts(_ value: Route)

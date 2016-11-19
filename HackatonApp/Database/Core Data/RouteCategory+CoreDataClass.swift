@@ -10,8 +10,8 @@ import Foundation
 import CoreData
 
 
-public class Category: NSManagedObject {
+public class RouteCategory: NSManagedObject {
     override class func getEntityName() -> String {
-        return "Category"
+        return "RouteCategory"
     }
 }

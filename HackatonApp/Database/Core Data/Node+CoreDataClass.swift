@@ -10,9 +10,9 @@ import Foundation
 import CoreData
 
 
-public class Point: NSManagedObject {
+public class Node: NSManagedObject {
     override class func getEntityName() -> String {
-        return "Point"
+        return "Node"
     }
 
 }

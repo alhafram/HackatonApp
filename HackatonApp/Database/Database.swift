@@ -15,8 +15,8 @@ class Database {
     @objc @discardableResult func addRouteEntity(
         name: String, rating: Int64, duration: Int64,
         price: Int64, cover: String, obj_id: Int64,
-        descr: String, points: Set<Point>,
-        gallery: Set<Gallery>, category: Set<Category>) -> Route {
+        descr: String, points: Set<Node>,
+        gallery: Set<Gallery>, category: Set<RouteCategory>) -> Route {
         
         let route = Route()
         route.name = name
@@ -41,11 +41,11 @@ class Database {
         }
     }
     
-    @objc @discardableResult func addPointEntity(
+    @objc @discardableResult func addNodeEntity(
         obj_id: Int64, name: String, time: String,
-        pin: String, routes: Set<Route>) -> Point {
+        pin: String, routes: Set<Route>) -> Node {
         
-        let point = Point()
+        let point = Node()
         point.obj_id = obj_id
         point.name = name
         point.time = time
@@ -57,7 +57,7 @@ class Database {
     }
     
     @objc func deletePointEntities() -> Void {
-        let deleteEntities: [Point]? = self.getEntities()
+        let deleteEntities: [Node]? = self.getEntities()
         if let deleteEntities = deleteEntities {
             self.deleteEntities(entities: deleteEntities)
         }
@@ -82,8 +82,8 @@ class Database {
     }
     
     @objc @discardableResult func addCategoryEntity(
-        obj_id: Int64, name: String) -> Category {
-        let category = Category()
+        obj_id: Int64, name: String) -> RouteCategory {
+        let category = RouteCategory()
         
         category.obj_id = obj_id
         category.name = name
@@ -93,7 +93,7 @@ class Database {
     }
     
     @objc func deleteCategoryEntities() -> Void {
-        let deleteEntities: [Category]? = self.getEntities()
+        let deleteEntities: [RouteCategory]? = self.getEntities()
         if let deleteEntities = deleteEntities {
             self.deleteEntities(entities: deleteEntities)
         }

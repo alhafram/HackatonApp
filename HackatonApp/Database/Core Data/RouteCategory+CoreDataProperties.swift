@@ -10,26 +10,26 @@ import Foundation
 import CoreData
 
 
-extension Category {
+extension RouteCategory {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Category> {
-        return NSFetchRequest<Category>(entityName: "Category");
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<RouteCategory> {
+        return NSFetchRequest<RouteCategory>(entityName: "RouteCategory");
     }
 
-    @NSManaged public var obj_id: Int64
     @NSManaged public var name: String
+    @NSManaged public var obj_id: Int64
     @NSManaged public var routs: Set<Route>?
 
 }
 
 // MARK: Generated accessors for routs
-extension Category {
+extension RouteCategory {
 
     @objc(addRoutsObject:)
-    @NSManaged public func addToRouts(_ value: Route)
+    @NSManaged public func addToRouts(_ value: RouteCategory)
 
     @objc(removeRoutsObject:)
-    @NSManaged public func removeFromRouts(_ value: Route)
+    @NSManaged public func removeFromRouts(_ value: RouteCategory)
 
     @objc(addRouts:)
     @NSManaged public func addToRouts(_ values: NSSet)
