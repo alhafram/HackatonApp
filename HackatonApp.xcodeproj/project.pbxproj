@@ -18,6 +18,8 @@
 		04E85D451DE05EDE007DA2E7 /* HASettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D441DE05EDE007DA2E7 /* HASettingsManager.m */; };
 		04E85D481DE0D21D007DA2E7 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D471DE0D21D007DA2E7 /* MapViewController.m */; };
 		04E85D4A1DE0D22B007DA2E7 /* RouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D491DE0D22B007DA2E7 /* RouteModel.swift */; };
+		04E85D511DE0D2E6007DA2E7 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E85D501DE0D2E6007DA2E7 /* Feed.storyboard */; };
+		04E85D531DE0D2F4007DA2E7 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E85D521DE0D2F4007DA2E7 /* Detail.storyboard */; };
 		506355291DDFD8F800AEC84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 506355281DDFD8F800AEC84B /* main.m */; };
 		5063552C1DDFD8F800AEC84B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5063552B1DDFD8F800AEC84B /* AppDelegate.m */; };
 		506355321DDFD8F800AEC84B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506355301DDFD8F800AEC84B /* Main.storyboard */; };
@@ -64,6 +66,8 @@
 		04E85D461DE0D21D007DA2E7 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		04E85D471DE0D21D007DA2E7 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		04E85D491DE0D22B007DA2E7 /* RouteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteModel.swift; sourceTree = "<group>"; };
+		04E85D501DE0D2E6007DA2E7 /* Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
+		04E85D521DE0D2F4007DA2E7 /* Detail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		506355241DDFD8F800AEC84B /* HackatonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackatonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506355281DDFD8F800AEC84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5063552A1DDFD8F800AEC84B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -198,6 +202,31 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		04E85D4B1DE0D2C6007DA2E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04E85D4C1DE0D2C6007DA2E7 /* Assets */,
+				04E85D4D1DE0D2C6007DA2E7 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04E85D4C1DE0D2C6007DA2E7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		04E85D4D1DE0D2C6007DA2E7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				04E85D501DE0D2E6007DA2E7 /* Feed.storyboard */,
+				04E85D521DE0D2F4007DA2E7 /* Detail.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		5063551B1DDFD8F800AEC84B = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +248,7 @@
 		506355261DDFD8F800AEC84B /* HackatonApp */ = {
 			isa = PBXGroup;
 			children = (
+				04E85D4B1DE0D2C6007DA2E7 /* Resources */,
 				04E85D361DE0257B007DA2E7 /* Managers */,
 				04E85D2C1DE01D5E007DA2E7 /* Library */,
 				04E85D2E1DE01D5E007DA2E7 /* Utils */,
@@ -362,8 +392,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E85D511DE0D2E6007DA2E7 /* Feed.storyboard in Resources */,
 				5063553A1DDFD8F800AEC84B /* LaunchScreen.storyboard in Resources */,
 				506355371DDFD8F800AEC84B /* Assets.xcassets in Resources */,
+				04E85D531DE0D2F4007DA2E7 /* Detail.storyboard in Resources */,
 				506355321DDFD8F800AEC84B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
