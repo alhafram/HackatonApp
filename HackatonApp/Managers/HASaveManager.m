@@ -32,7 +32,7 @@
     NSLog(@"path: %@", path);
     
     NSString* fileName = [path stringByAppendingFormat:@"/%@", imageName];
-    NSData * binaryImageData = [NSData dataWithContentsOfURL:[NSURL URLWithString: [NSString stringWithFormat:@"%@%@", kHAServerImagesPath, imageName]]];
+    NSData * binaryImageData = [NSData dataWithContentsOfURL:[NSURL URLWithString: imageName]];
     [binaryImageData writeToFile:fileName atomically:YES];
 }
 
