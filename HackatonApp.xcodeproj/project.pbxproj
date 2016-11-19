@@ -29,7 +29,7 @@
 		506355351DDFD8F800AEC84B /* HackatonApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 506355331DDFD8F800AEC84B /* HackatonApp.xcdatamodeld */; };
 		506355371DDFD8F800AEC84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506355361DDFD8F800AEC84B /* Assets.xcassets */; };
 		5063553A1DDFD8F800AEC84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506355381DDFD8F800AEC84B /* LaunchScreen.storyboard */; };
-		64CB7BE1D20E4FFF6AE11499 /* libPods-HackatonApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */; };
+		B0B2B2FBD70762F132D0750C /* Pods_HackatonApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88404A476A0AC1326B586EED /* Pods_HackatonApp.framework */; };
 		D709A2581DE01FD400F42086 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2571DE01FD400F42086 /* CoreDataManager.swift */; };
 		D709A2611DE0281100F42086 /* Node+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2591DE0281100F42086 /* Node+CoreDataClass.swift */; };
 		D709A2621DE0281100F42086 /* Node+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25A1DE0281100F42086 /* Node+CoreDataProperties.swift */; };
@@ -84,6 +84,7 @@
 		506355361DDFD8F800AEC84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		506355391DDFD8F800AEC84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5063553B1DDFD8F800AEC84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88404A476A0AC1326B586EED /* Pods_HackatonApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackatonApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9376501FD978EF51448B65F7 /* Pods-HackatonApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D4C6DEB739557E9E51A7FD3E /* Pods-HackatonApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.release.xcconfig"; sourceTree = "<group>"; };
 		D709A2571DE01FD400F42086 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -98,7 +99,6 @@
 		D709A2691DE02C8B00F42086 /* Extansions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extansions.swift; sourceTree = "<group>"; };
 		D709A2731DE0687800F42086 /* Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		D709A2751DE08AF400F42086 /* RouteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
-		FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HackatonApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64CB7BE1D20E4FFF6AE11499 /* libPods-HackatonApp.a in Frameworks */,
+				B0B2B2FBD70762F132D0750C /* Pods_HackatonApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +294,7 @@
 		5F0C11DAF1915F43A7D1D8E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */,
+				88404A476A0AC1326B586EED /* Pods_HackatonApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
