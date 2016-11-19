@@ -5,5 +5,6 @@
 
 target ‘HackatonApp’ do
 	pod 'AFNetworking', '~> 2.6.3'
+	pod 'GoogleMaps'
 end
 

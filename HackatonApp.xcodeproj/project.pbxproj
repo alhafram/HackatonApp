@@ -24,6 +24,7 @@
 		506355351DDFD8F800AEC84B /* HackatonApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 506355331DDFD8F800AEC84B /* HackatonApp.xcdatamodeld */; };
 		506355371DDFD8F800AEC84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506355361DDFD8F800AEC84B /* Assets.xcassets */; };
 		5063553A1DDFD8F800AEC84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506355381DDFD8F800AEC84B /* LaunchScreen.storyboard */; };
+		50A3AAB51DE09317008C5CCD /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3AAB41DE09317008C5CCD /* MapViewController.m */; };
 		64CB7BE1D20E4FFF6AE11499 /* libPods-HackatonApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */; };
 		D709A2581DE01FD400F42086 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2571DE01FD400F42086 /* CoreDataManager.swift */; };
 		D709A2611DE0281100F42086 /* Node+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2591DE0281100F42086 /* Node+CoreDataClass.swift */; };
@@ -75,6 +76,8 @@
 		506355361DDFD8F800AEC84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		506355391DDFD8F800AEC84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5063553B1DDFD8F800AEC84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50A3AAB31DE09317008C5CCD /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		50A3AAB41DE09317008C5CCD /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		9376501FD978EF51448B65F7 /* Pods-HackatonApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D4C6DEB739557E9E51A7FD3E /* Pods-HackatonApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.release.xcconfig"; sourceTree = "<group>"; };
 		D709A2571DE01FD400F42086 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -230,6 +233,8 @@
 				D709A2711DE062D900F42086 /* Models */,
 				04C335B21DE004F0005D633B /* Database */,
 				04C335B41DE004F0005D633B /* Views */,
+				50A3AAB31DE09317008C5CCD /* MapViewController.h */,
+				50A3AAB41DE09317008C5CCD /* MapViewController.m */,
 				5063552A1DDFD8F800AEC84B /* AppDelegate.h */,
 				5063552B1DDFD8F800AEC84B /* AppDelegate.m */,
 				5063552D1DDFD8F800AEC84B /* ViewController.h */,
@@ -455,6 +460,7 @@
 				04E85D321DE01D78007DA2E7 /* HAErrorHelper.m in Sources */,
 				D709A2701DE0620800F42086 /* RouteModel.swift in Sources */,
 				D709A26A1DE02C8B00F42086 /* Extansions.swift in Sources */,
+				50A3AAB51DE09317008C5CCD /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
