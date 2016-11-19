@@ -31,8 +31,9 @@
     
     NSLog(@"path: %@", path);
     
-    NSString* fileName = [path stringByAppendingFormat:@"/%@", imageName];
     NSData * binaryImageData = [NSData dataWithContentsOfURL:[NSURL URLWithString: imageName]];
+    
+    NSString* fileName = [path stringByAppendingFormat:@"/%@", [imageName lastPathComponent]];
     [binaryImageData writeToFile:fileName atomically:YES];
 }
 

@@ -9,6 +9,10 @@
 #import "MapViewController.h"
 @import GoogleMaps;
 
+#import "HANMRoutesComponent.h"
+#import "HANetworkManager.h"
+#import "HAParseManager.h"
+
 @interface CoordsList : NSObject
 
 @property(nonatomic, readonly, copy) GMSPath *path;
@@ -51,6 +55,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    HANMRoutesComponent* r = [[HANMRoutesComponent alloc] initWithNetManager:[HANetworkManager sharedInstance]];
+    [r getAllRouteseWithCompletionBlock:^(BOOL success, NSError *error, id responseData) {
+        [[HAParseManager sharedInstance] parseRouteDictionary:responseData];
+    }];
     
     _mapForView = [[UIView alloc]  initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds) / 2)];
     _mapView = [[GMSMapView alloc] initWithFrame:CGRectMake(0, 0, _mapForView.frame.size.width, _mapForView.frame.size.height)];

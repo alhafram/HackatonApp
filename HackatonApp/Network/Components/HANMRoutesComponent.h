@@ -11,6 +11,5 @@
 @interface HANMRoutesComponent : HANMBaseComponent
 
 - (void)getAllRouteseWithCompletionBlock:(HARequestCompletionBlock)completionBlock;
-- (void)getRoutesByCategoriesId:(NSArray *)categories completionBlock:(HARequestCompletionBlock)completionBlock;
 
 @end

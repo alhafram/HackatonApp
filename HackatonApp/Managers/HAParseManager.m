@@ -37,7 +37,7 @@
     for (NSDictionary* dict in picturesArray) {
         
         NSString* imageName = [dict[@"url"] lastPathComponent];
-        [[HASaveManager sharedInstance] saveImageByName:imageName];
+        [[HASaveManager sharedInstance] saveImageByName:dict[@"url"]];
         
         Gallery* gallery = [[Database instance] addGalleryEntityWithImage:imageName
                                                                    obj_id:[dict[@"id"] integerValue]];
@@ -75,7 +75,7 @@
                                            category:categoriesSet];
     }
     
-    [[Database instance] printDatabase];
+//    [[Database instance] resetDatabase];
 }
 
 @end
