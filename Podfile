@@ -8,6 +8,7 @@ target ‘HackatonApp’ do
   pod 'Segmentio', '2.0'
 	pod 'AFNetworking', '~> 2.6.3'
 	pod 'GoogleMaps'
+	pod 'StretchHeader', '1.1'
 	
 	 post_install do |installer|
         installer.pods_project.targets.each do |target|
