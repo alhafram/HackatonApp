@@ -25,11 +25,6 @@
 //    }];
 //    
 //    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
-    
-    HANMRoutesComponent* r = [[HANMRoutesComponent alloc] initWithNetManager:[HANetworkManager sharedInstance]];
-    [r getAllRouteseWithCompletionBlock:^(BOOL success, NSError *error, id responseData) {
-        [[HAParseManager sharedInstance] parseRouteDictionary:responseData];
-    }];
 
     return YES;
 }

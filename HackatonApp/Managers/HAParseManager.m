@@ -23,7 +23,7 @@
 
 - (void)parseRouteDictionary:(NSDictionary *)responseData {
     
-    [[Database instance] resetDatabase];
+//    [[Database instance] resetDatabase];
     
     NSArray* pointsArray = responseData[@"points"];
     NSArray* routesArray = responseData[@"routes"];
