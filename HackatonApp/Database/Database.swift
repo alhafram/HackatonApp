@@ -87,7 +87,7 @@ import CoreData
         pin: String) -> Node {
         
         let node = NSEntityDescription.insertNewObject(
-            forEntityName: Node.getEntityName(),
+            forEntityName: "Node",
             into: CoreDataManager.instance.managedObjectContext) as! Node
         
         node.obj_id = obj_id

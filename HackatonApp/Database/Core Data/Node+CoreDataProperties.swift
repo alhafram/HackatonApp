@@ -1,5 +1,5 @@
 //
-//  Point+CoreDataProperties.swift
+//  Node+CoreDataProperties.swift
 //  
 //
 //  Created by Каратаев Алексей on 19.11.16.

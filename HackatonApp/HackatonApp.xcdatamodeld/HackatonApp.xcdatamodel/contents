@@ -5,7 +5,7 @@
         <attribute name="obj_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="routs" toMany="YES" deletionRule="Nullify" destinationEntity="Route" inverseName="gallery" inverseEntity="Route" syncable="YES"/>
     </entity>
-    <entity name="Node" representedClassName=".Point" syncable="YES">
+    <entity name="Node" representedClassName=".Node" syncable="YES">
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="obj_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="pin" attributeType="String" syncable="YES"/>
@@ -24,7 +24,7 @@
         <relationship name="gallery" toMany="YES" deletionRule="Nullify" destinationEntity="Gallery" inverseName="routs" inverseEntity="Gallery" syncable="YES"/>
         <relationship name="points" toMany="YES" deletionRule="Nullify" destinationEntity="Node" inverseName="routs" inverseEntity="Node" syncable="YES"/>
     </entity>
-    <entity name="RouteCategory" representedClassName=".Category" syncable="YES">
+    <entity name="RouteCategory" representedClassName=".RouteCategory" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="obj_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="routs" toMany="YES" deletionRule="Nullify" destinationEntity="Route" inverseName="category" inverseEntity="Route" syncable="YES"/>

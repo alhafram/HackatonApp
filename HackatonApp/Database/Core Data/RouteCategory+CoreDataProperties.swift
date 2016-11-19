@@ -1,5 +1,5 @@
 //
-//  Category+CoreDataProperties.swift
+//  RouteCategory+CoreDataProperties.swift
 //  
 //
 //  Created by Каратаев Алексей on 19.11.16.
@@ -8,7 +8,6 @@
 
 import Foundation
 import CoreData
-
 
 extension RouteCategory {
 
@@ -26,10 +25,10 @@ extension RouteCategory {
 extension RouteCategory {
 
     @objc(addRoutsObject:)
-    @NSManaged public func addToRouts(_ value: RouteCategory)
+    @NSManaged public func addToRouts(_ value: Route)
 
     @objc(removeRoutsObject:)
-    @NSManaged public func removeFromRouts(_ value: RouteCategory)
+    @NSManaged public func removeFromRouts(_ value: Route)
 
     @objc(addRouts:)
     @NSManaged public func addToRouts(_ values: NSSet)
