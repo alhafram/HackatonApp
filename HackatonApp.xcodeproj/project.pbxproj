@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		506355291DDFD8F800AEC84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 506355281DDFD8F800AEC84B /* main.m */; };
+		5063552C1DDFD8F800AEC84B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5063552B1DDFD8F800AEC84B /* AppDelegate.m */; };
+		5063552F1DDFD8F800AEC84B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5063552E1DDFD8F800AEC84B /* ViewController.m */; };
+		506355321DDFD8F800AEC84B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506355301DDFD8F800AEC84B /* Main.storyboard */; };
+		506355351DDFD8F800AEC84B /* HackatonApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 506355331DDFD8F800AEC84B /* HackatonApp.xcdatamodeld */; };
+		506355371DDFD8F800AEC84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506355361DDFD8F800AEC84B /* Assets.xcassets */; };
+		5063553A1DDFD8F800AEC84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506355381DDFD8F800AEC84B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		506355241DDFD8F800AEC84B /* HackatonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackatonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		506355281DDFD8F800AEC84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5063552A1DDFD8F800AEC84B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5063552B1DDFD8F800AEC84B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5063552D1DDFD8F800AEC84B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5063552E1DDFD8F800AEC84B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		506355311DDFD8F800AEC84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		506355341DDFD8F800AEC84B /* HackatonApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HackatonApp.xcdatamodel; sourceTree = "<group>"; };
+		506355361DDFD8F800AEC84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		506355391DDFD8F800AEC84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5063553B1DDFD8F800AEC84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		506355211DDFD8F800AEC84B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5063551B1DDFD8F800AEC84B = {
+			isa = PBXGroup;
+			children = (
+				506355261DDFD8F800AEC84B /* HackatonApp */,
+				506355251DDFD8F800AEC84B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		506355251DDFD8F800AEC84B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				506355241DDFD8F800AEC84B /* HackatonApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		506355261DDFD8F800AEC84B /* HackatonApp */ = {
+			isa = PBXGroup;
+			children = (
+				5063552A1DDFD8F800AEC84B /* AppDelegate.h */,
+				5063552B1DDFD8F800AEC84B /* AppDelegate.m */,
+				5063552D1DDFD8F800AEC84B /* ViewController.h */,
+				5063552E1DDFD8F800AEC84B /* ViewController.m */,
+				506355301DDFD8F800AEC84B /* Main.storyboard */,
+				506355361DDFD8F800AEC84B /* Assets.xcassets */,
+				506355381DDFD8F800AEC84B /* LaunchScreen.storyboard */,
+				5063553B1DDFD8F800AEC84B /* Info.plist */,
+				506355331DDFD8F800AEC84B /* HackatonApp.xcdatamodeld */,
+				506355271DDFD8F800AEC84B /* Supporting Files */,
+			);
+			path = HackatonApp;
+			sourceTree = "<group>";
+		};
+		506355271DDFD8F800AEC84B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				506355281DDFD8F800AEC84B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		506355231DDFD8F800AEC84B /* HackatonApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5063553E1DDFD8F800AEC84B /* Build configuration list for PBXNativeTarget "HackatonApp" */;
+			buildPhases = (
+				506355201DDFD8F800AEC84B /* Sources */,
+				506355211DDFD8F800AEC84B /* Frameworks */,
+				506355221DDFD8F800AEC84B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackatonApp;
+			productName = HackatonApp;
+			productReference = 506355241DDFD8F800AEC84B /* HackatonApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5063551C1DDFD8F800AEC84B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Albert;
+				TargetAttributes = {
+					506355231DDFD8F800AEC84B = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5063551F1DDFD8F800AEC84B /* Build configuration list for PBXProject "HackatonApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5063551B1DDFD8F800AEC84B;
+			productRefGroup = 506355251DDFD8F800AEC84B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				506355231DDFD8F800AEC84B /* HackatonApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		506355221DDFD8F800AEC84B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5063553A1DDFD8F800AEC84B /* LaunchScreen.storyboard in Resources */,
+				506355371DDFD8F800AEC84B /* Assets.xcassets in Resources */,
+				506355321DDFD8F800AEC84B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		506355201DDFD8F800AEC84B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5063552F1DDFD8F800AEC84B /* ViewController.m in Sources */,
+				5063552C1DDFD8F800AEC84B /* AppDelegate.m in Sources */,
+				506355351DDFD8F800AEC84B /* HackatonApp.xcdatamodeld in Sources */,
+				506355291DDFD8F800AEC84B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		506355301DDFD8F800AEC84B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				506355311DDFD8F800AEC84B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		506355381DDFD8F800AEC84B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				506355391DDFD8F800AEC84B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5063553C1DDFD8F800AEC84B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5063553D1DDFD8F800AEC84B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5063553F1DDFD8F800AEC84B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = HackatonApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HA.HackatonApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		506355401DDFD8F800AEC84B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = HackatonApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HA.HackatonApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5063551F1DDFD8F800AEC84B /* Build configuration list for PBXProject "HackatonApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5063553C1DDFD8F800AEC84B /* Debug */,
+				5063553D1DDFD8F800AEC84B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5063553E1DDFD8F800AEC84B /* Build configuration list for PBXNativeTarget "HackatonApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5063553F1DDFD8F800AEC84B /* Debug */,
+				506355401DDFD8F800AEC84B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		506355331DDFD8F800AEC84B /* HackatonApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				506355341DDFD8F800AEC84B /* HackatonApp.xcdatamodel */,
+			);
+			currentVersion = 506355341DDFD8F800AEC84B /* HackatonApp.xcdatamodel */;
+			path = HackatonApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5063551C1DDFD8F800AEC84B /* Project object */;
+}
