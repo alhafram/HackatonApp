@@ -26,6 +26,8 @@
 		506355291DDFD8F800AEC84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 506355281DDFD8F800AEC84B /* main.m */; };
 		5063552C1DDFD8F800AEC84B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5063552B1DDFD8F800AEC84B /* AppDelegate.m */; };
 		506355321DDFD8F800AEC84B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506355301DDFD8F800AEC84B /* Main.storyboard */; };
+		50A3AAC91DE0DB7E008C5CCD /* CustomSnippetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3AAC71DE0DB7E008C5CCD /* CustomSnippetView.m */; };
+		50A3AACA1DE0DB7E008C5CCD /* CustomSnippetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A3AAC81DE0DB7E008C5CCD /* CustomSnippetView.xib */; };
 		506355351DDFD8F800AEC84B /* HackatonApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 506355331DDFD8F800AEC84B /* HackatonApp.xcdatamodeld */; };
 		506355371DDFD8F800AEC84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506355361DDFD8F800AEC84B /* Assets.xcassets */; };
 		5063553A1DDFD8F800AEC84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506355381DDFD8F800AEC84B /* LaunchScreen.storyboard */; };
@@ -76,6 +78,9 @@
 		04E85D541DE0D33D007DA2E7 /* HAFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAFeedCell.h; sourceTree = "<group>"; };
 		04E85D551DE0D33D007DA2E7 /* HAFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFeedCell.m; sourceTree = "<group>"; };
 		04E85D561DE0D33D007DA2E7 /* HAFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAFeedCell.xib; sourceTree = "<group>"; };
+		50A3AAC61DE0DB7E008C5CCD /* CustomSnippetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomSnippetView.h; path = HackatonApp/CustomSnippetView.h; sourceTree = SOURCE_ROOT; };
+		50A3AAC71DE0DB7E008C5CCD /* CustomSnippetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomSnippetView.m; path = HackatonApp/CustomSnippetView.m; sourceTree = SOURCE_ROOT; };
+		50A3AAC81DE0DB7E008C5CCD /* CustomSnippetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomSnippetView.xib; path = HackatonApp/CustomSnippetView.xib; sourceTree = SOURCE_ROOT; };
 		04E85D591DE0D44C007DA2E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		506355241DDFD8F800AEC84B /* HackatonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackatonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506355281DDFD8F800AEC84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -141,6 +146,9 @@
 		04C335B41DE004F0005D633B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				50A3AAC61DE0DB7E008C5CCD /* CustomSnippetView.h */,
+				50A3AAC71DE0DB7E008C5CCD /* CustomSnippetView.m */,
+				50A3AAC81DE0DB7E008C5CCD /* CustomSnippetView.xib */,
 				04E85D541DE0D33D007DA2E7 /* HAFeedCell.h */,
 				04E85D551DE0D33D007DA2E7 /* HAFeedCell.m */,
 				04E85D561DE0D33D007DA2E7 /* HAFeedCell.xib */,
@@ -412,6 +420,7 @@
 				04E85D511DE0D2E6007DA2E7 /* Feed.storyboard in Resources */,
 				5063553A1DDFD8F800AEC84B /* LaunchScreen.storyboard in Resources */,
 				04E85D5A1DE0D44C007DA2E7 /* Images.xcassets in Resources */,
+				50A3AACA1DE0DB7E008C5CCD /* CustomSnippetView.xib in Resources */,
 				04E85D581DE0D33D007DA2E7 /* HAFeedCell.xib in Resources */,
 				506355371DDFD8F800AEC84B /* Assets.xcassets in Resources */,
 				04E85D531DE0D2F4007DA2E7 /* Detail.storyboard in Resources */,
@@ -478,6 +487,7 @@
 				04E85D421DE056E9007DA2E7 /* HAParseManager.m in Sources */,
 				04E85D451DE05EDE007DA2E7 /* HASettingsManager.m in Sources */,
 				D709A2651DE0281100F42086 /* Gallery+CoreDataClass.swift in Sources */,
+				50A3AAC91DE0DB7E008C5CCD /* CustomSnippetView.m in Sources */,
 				04E85D3C1DE02C41007DA2E7 /* HANMRoutesComponent.m in Sources */,
 				D709A2761DE08AF400F42086 /* RouteManager.swift in Sources */,
 				D78B59611DE0F04100FFF383 /* FeedViewController.swift in Sources */,
