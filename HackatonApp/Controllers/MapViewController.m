@@ -8,6 +8,7 @@
 
 #import "MapViewController.h"
 @import GoogleMaps;
+#import "CustomSnippetView.h"
 
 #import "HANMRoutesComponent.h"
 #import "HANetworkManager.h"
@@ -104,23 +105,27 @@
     GMSMarker* marker0 = [GMSMarker markerWithPosition:CLLocationCoordinate2DMake(52.310683, 4.765121)];
     marker0.title = @"Netherlands";
     marker0.map = _mapView;
-    marker0.icon = [UIImage imageNamed:@"black_dot"];
-    marker0.snippet = @"This is snppet";
+    marker0.icon = [UIImage imageNamed:@"city"];
+    marker0.snippet = @"The Netherlands is the main constituent country of the Kingdom of the Netherlands.";
     
     GMSMarker* marker1 = [GMSMarker markerWithPosition:CLLocationCoordinate2DMake(51.471386 , -0.457148)];
     marker1.title = @"London";
     marker1.map = _mapView;
-    marker1.icon = [UIImage imageNamed:@"black_dot"];
+    marker1.icon = [UIImage imageNamed:@"city"];
+    marker1.snippet = @"London is the capital and most populous city of England and the United Kingdom.";
     
     GMSMarker* marker2 = [GMSMarker markerWithPosition:CLLocationCoordinate2DMake(49.01378, 2.5542943)];
     marker2.title = @"Paris";
     marker2.map = _mapView;
-    marker2.icon = [UIImage imageNamed:@"black_dot"];
+    marker2.icon = [UIImage imageNamed:@"city"];
+    marker2.snippet = @"Paris is the capital and the most populous city of France.";
     
     first = marker0.position;
     
     
     _mapView.camera = [GMSCameraPosition cameraWithLatitude:marker0.position.latitude longitude:marker0.position.longitude zoom:5];
+    _mapView.settings.zoomGestures = NO;
+    _mapView.settings.scrollGestures = NO;
     
     [_mapForView addSubview:_mapView];
     [self.view addSubview:_mapForView];
@@ -165,6 +170,17 @@
 }
 
 #pragma mark - GMSMapViewDelegate
+
+- (UIView *GMS_NULLABLE_PTR)mapView:(GMSMapView *)mapView markerInfoWindow:(GMSMarker *)marker {
+    
+    CustomSnippetView* view = [[[NSBundle mainBundle] loadNibNamed:@"CustomSnippetView" owner:self.view options:nil] objectAtIndex:0];
+    ///view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, self.view.frame.size.width, 100);
+    view.title.text = marker.title;
+    view.snippet.text = marker.snippet;
+    view.layer.cornerRadius = 13.f;
+    
+    return view;
+}
 
 
 @end
