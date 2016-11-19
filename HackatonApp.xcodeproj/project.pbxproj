@@ -12,6 +12,7 @@
 		04E85D2B1DE01C98007DA2E7 /* HANMBaseComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D2A1DE01C98007DA2E7 /* HANMBaseComponent.m */; };
 		04E85D321DE01D78007DA2E7 /* HAErrorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D311DE01D78007DA2E7 /* HAErrorHelper.m */; };
 		04E85D351DE01D9D007DA2E7 /* NSDictionary+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D341DE01D9D007DA2E7 /* NSDictionary+Helper.m */; };
+		04E85D391DE0258B007DA2E7 /* HASaveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D381DE0258B007DA2E7 /* HASaveManager.m */; };
 		506355291DDFD8F800AEC84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 506355281DDFD8F800AEC84B /* main.m */; };
 		5063552C1DDFD8F800AEC84B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5063552B1DDFD8F800AEC84B /* AppDelegate.m */; };
 		5063552F1DDFD8F800AEC84B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5063552E1DDFD8F800AEC84B /* ViewController.m */; };
@@ -21,6 +22,15 @@
 		5063553A1DDFD8F800AEC84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506355381DDFD8F800AEC84B /* LaunchScreen.storyboard */; };
 		506355461DE01ED600AEC84B /* HASettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 506355451DE01ED600AEC84B /* HASettingsManager.m */; };
 		64CB7BE1D20E4FFF6AE11499 /* libPods-HackatonApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */; };
+		D709A2581DE01FD400F42086 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2571DE01FD400F42086 /* CoreDataManager.swift */; };
+		D709A2611DE0281100F42086 /* Point+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2591DE0281100F42086 /* Point+CoreDataClass.swift */; };
+		D709A2621DE0281100F42086 /* Point+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25A1DE0281100F42086 /* Point+CoreDataProperties.swift */; };
+		D709A2631DE0281100F42086 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25B1DE0281100F42086 /* Category+CoreDataClass.swift */; };
+		D709A2641DE0281100F42086 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25C1DE0281100F42086 /* Category+CoreDataProperties.swift */; };
+		D709A2651DE0281100F42086 /* Gallery+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25D1DE0281100F42086 /* Gallery+CoreDataClass.swift */; };
+		D709A2661DE0281100F42086 /* Gallery+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25E1DE0281100F42086 /* Gallery+CoreDataProperties.swift */; };
+		D709A2671DE0281100F42086 /* Route+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25F1DE0281100F42086 /* Route+CoreDataClass.swift */; };
+		D709A2681DE0281100F42086 /* Route+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2601DE0281100F42086 /* Route+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +47,8 @@
 		04E85D311DE01D78007DA2E7 /* HAErrorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAErrorHelper.m; sourceTree = "<group>"; };
 		04E85D331DE01D9D007DA2E7 /* NSDictionary+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Helper.h"; sourceTree = "<group>"; };
 		04E85D341DE01D9D007DA2E7 /* NSDictionary+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Helper.m"; sourceTree = "<group>"; };
+		04E85D371DE0258B007DA2E7 /* HASaveManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HASaveManager.h; sourceTree = "<group>"; };
+		04E85D381DE0258B007DA2E7 /* HASaveManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HASaveManager.m; sourceTree = "<group>"; };
 		506355241DDFD8F800AEC84B /* HackatonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackatonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506355281DDFD8F800AEC84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5063552A1DDFD8F800AEC84B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,6 +64,15 @@
 		506355451DE01ED600AEC84B /* HASettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HASettingsManager.m; path = HackatonApp/HASettingsManager.m; sourceTree = SOURCE_ROOT; };
 		9376501FD978EF51448B65F7 /* Pods-HackatonApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D4C6DEB739557E9E51A7FD3E /* Pods-HackatonApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.release.xcconfig"; sourceTree = "<group>"; };
+		D709A2571DE01FD400F42086 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		D709A2591DE0281100F42086 /* Point+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D709A25A1DE0281100F42086 /* Point+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Point+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D709A25B1DE0281100F42086 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D709A25C1DE0281100F42086 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D709A25D1DE0281100F42086 /* Gallery+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gallery+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D709A25E1DE0281100F42086 /* Gallery+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gallery+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D709A25F1DE0281100F42086 /* Route+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Route+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D709A2601DE0281100F42086 /* Route+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Route+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HackatonApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,6 +98,7 @@
 		04C335B21DE004F0005D633B /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				D709A2561DE01F8200F42086 /* Core Data */,
 				04C335B61DE0050C005D633B /* Database.swift */,
 				04C335B51DE0050B005D633B /* HackatonApp-Bridging-Header.h */,
 			);
@@ -153,6 +175,15 @@
 			path = ProjectHelpers;
 			sourceTree = "<group>";
 		};
+		04E85D361DE0257B007DA2E7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				04E85D371DE0258B007DA2E7 /* HASaveManager.h */,
+				04E85D381DE0258B007DA2E7 /* HASaveManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		5063551B1DDFD8F800AEC84B = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +205,7 @@
 		506355261DDFD8F800AEC84B /* HackatonApp */ = {
 			isa = PBXGroup;
 			children = (
+				04E85D361DE0257B007DA2E7 /* Managers */,
 				04E85D2C1DE01D5E007DA2E7 /* Library */,
 				04E85D2E1DE01D5E007DA2E7 /* Utils */,
 				04E85D211DE01615007DA2E7 /* Network */,
@@ -220,6 +252,22 @@
 				D4C6DEB739557E9E51A7FD3E /* Pods-HackatonApp.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D709A2561DE01F8200F42086 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				D709A2591DE0281100F42086 /* Point+CoreDataClass.swift */,
+				D709A25A1DE0281100F42086 /* Point+CoreDataProperties.swift */,
+				D709A25B1DE0281100F42086 /* Category+CoreDataClass.swift */,
+				D709A25C1DE0281100F42086 /* Category+CoreDataProperties.swift */,
+				D709A25D1DE0281100F42086 /* Gallery+CoreDataClass.swift */,
+				D709A25E1DE0281100F42086 /* Gallery+CoreDataProperties.swift */,
+				D709A25F1DE0281100F42086 /* Route+CoreDataClass.swift */,
+				D709A2601DE0281100F42086 /* Route+CoreDataProperties.swift */,
+				D709A2571DE01FD400F42086 /* CoreDataManager.swift */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,14 +394,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				5063552F1DDFD8F800AEC84B /* ViewController.m in Sources */,
+				D709A2681DE0281100F42086 /* Route+CoreDataProperties.swift in Sources */,
+				D709A2651DE0281100F42086 /* Gallery+CoreDataClass.swift in Sources */,
 				5063552C1DDFD8F800AEC84B /* AppDelegate.m in Sources */,
 				506355461DE01ED600AEC84B /* HASettingsManager.m in Sources */,
 				506355351DDFD8F800AEC84B /* HackatonApp.xcdatamodeld in Sources */,
+				D709A2631DE0281100F42086 /* Category+CoreDataClass.swift in Sources */,
+				D709A2671DE0281100F42086 /* Route+CoreDataClass.swift in Sources */,
 				04E85D251DE0165B007DA2E7 /* HANetworkManager.m in Sources */,
 				04E85D2B1DE01C98007DA2E7 /* HANMBaseComponent.m in Sources */,
+				04E85D391DE0258B007DA2E7 /* HASaveManager.m in Sources */,
 				04C335B71DE0050C005D633B /* Database.swift in Sources */,
+				D709A2641DE0281100F42086 /* Category+CoreDataProperties.swift in Sources */,
 				04E85D351DE01D9D007DA2E7 /* NSDictionary+Helper.m in Sources */,
+				D709A2611DE0281100F42086 /* Point+CoreDataClass.swift in Sources */,
 				506355291DDFD8F800AEC84B /* main.m in Sources */,
+				D709A2661DE0281100F42086 /* Gallery+CoreDataProperties.swift in Sources */,
+				D709A2581DE01FD400F42086 /* CoreDataManager.swift in Sources */,
+				D709A2621DE0281100F42086 /* Point+CoreDataProperties.swift in Sources */,
 				04E85D321DE01D78007DA2E7 /* HAErrorHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
