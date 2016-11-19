@@ -88,6 +88,7 @@
     [coords addLatitude:52.310683 longitude:4.765121];
     [coords addLatitude:51.471386 longitude:-0.457148];
     [coords addLatitude:49.01378 longitude:2.5542943];
+    
     marker = [GMSMarker markerWithPosition:[coords coordinateAtIndex:0]];
     marker.icon = [UIImage imageNamed:@"dot"];
     marker.groundAnchor = CGPointMake(0.5f, 0.5f);
@@ -95,6 +96,7 @@
     marker.map = _mapView;
     marker.userData = [[CoordsList alloc] initWithPath:coords];
     [self animateToNextCoord:marker];
+    _mapView.delegate = self;
 }
 
 
@@ -119,6 +121,8 @@
     
     marker.position = coord;
 }
+
+#pragma mark - GMSMapViewDelegate
 
 
 @end
