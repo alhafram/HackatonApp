@@ -15,6 +15,7 @@
 		04E85D391DE0258B007DA2E7 /* HASaveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D381DE0258B007DA2E7 /* HASaveManager.m */; };
 		04E85D3C1DE02C41007DA2E7 /* HANMRoutesComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D3B1DE02C41007DA2E7 /* HANMRoutesComponent.m */; };
 		04E85D3F1DE030F0007DA2E7 /* HANMCategoriesComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D3E1DE030F0007DA2E7 /* HANMCategoriesComponent.m */; };
+		04E85D421DE056E9007DA2E7 /* HAParseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D411DE056E9007DA2E7 /* HAParseManager.m */; };
 		506355291DDFD8F800AEC84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 506355281DDFD8F800AEC84B /* main.m */; };
 		5063552C1DDFD8F800AEC84B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5063552B1DDFD8F800AEC84B /* AppDelegate.m */; };
 		5063552F1DDFD8F800AEC84B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5063552E1DDFD8F800AEC84B /* ViewController.m */; };
@@ -56,6 +57,8 @@
 		04E85D3B1DE02C41007DA2E7 /* HANMRoutesComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HANMRoutesComponent.m; sourceTree = "<group>"; };
 		04E85D3D1DE030F0007DA2E7 /* HANMCategoriesComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HANMCategoriesComponent.h; sourceTree = "<group>"; };
 		04E85D3E1DE030F0007DA2E7 /* HANMCategoriesComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HANMCategoriesComponent.m; sourceTree = "<group>"; };
+		04E85D401DE056E9007DA2E7 /* HAParseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAParseManager.h; sourceTree = "<group>"; };
+		04E85D411DE056E9007DA2E7 /* HAParseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAParseManager.m; sourceTree = "<group>"; };
 		506355241DDFD8F800AEC84B /* HackatonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackatonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506355281DDFD8F800AEC84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5063552A1DDFD8F800AEC84B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -192,6 +195,8 @@
 			children = (
 				04E85D371DE0258B007DA2E7 /* HASaveManager.h */,
 				04E85D381DE0258B007DA2E7 /* HASaveManager.m */,
+				04E85D401DE056E9007DA2E7 /* HAParseManager.h */,
+				04E85D411DE056E9007DA2E7 /* HAParseManager.m */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -408,6 +413,7 @@
 			files = (
 				5063552F1DDFD8F800AEC84B /* ViewController.m in Sources */,
 				D709A2681DE0281100F42086 /* Route+CoreDataProperties.swift in Sources */,
+				04E85D421DE056E9007DA2E7 /* HAParseManager.m in Sources */,
 				D709A2651DE0281100F42086 /* Gallery+CoreDataClass.swift in Sources */,
 				04E85D3C1DE02C41007DA2E7 /* HANMRoutesComponent.m in Sources */,
 				5063552C1DDFD8F800AEC84B /* AppDelegate.m in Sources */,
