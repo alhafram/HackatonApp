@@ -13,10 +13,10 @@
 @protocol AFMultipartFormData;
 
 typedef NS_ENUM(NSUInteger, HANMOperationType) {
-    SENMOperationTypeGET = 0,
-    SENMOperationTypePOST,
-    SENMOperationTypeDELETE,
-    SENMOperationTypeMultipartForm
+    HANMOperationTypeGET = 0,
+    HANMOperationTypePOST,
+    HANMOperationTypeDELETE,
+    HANMOperationTypeMultipartForm
 };
 
 

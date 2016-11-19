@@ -80,13 +80,13 @@
     };
     
     AFHTTPRequestOperation* operation = nil;
-    if (operationType == SENMOperationTypeGET) {
+    if (operationType == HANMOperationTypeGET) {
         operation = [self.netManager GET:path parameters:parameters success:success failure:failure];
-    } else if (operationType == SENMOperationTypePOST) {
+    } else if (operationType == HANMOperationTypePOST) {
         operation = [self.netManager POST:path parameters:parameters success:success failure:failure];
-    } else if (operationType == SENMOperationTypeDELETE) {
+    } else if (operationType == HANMOperationTypeDELETE) {
         operation = [self.netManager DELETE:path parameters:parameters success:success failure:failure];
-    } else if (operationType == SENMOperationTypeMultipartForm) {
+    } else if (operationType == HANMOperationTypeMultipartForm) {
         operation = [self.netManager POST:path parameters:parameters constructingBodyWithBlock:block success:success failure:failure];
     }
     
