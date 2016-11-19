@@ -31,6 +31,7 @@
 		D709A2661DE0281100F42086 /* Gallery+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25E1DE0281100F42086 /* Gallery+CoreDataProperties.swift */; };
 		D709A2671DE0281100F42086 /* Route+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25F1DE0281100F42086 /* Route+CoreDataClass.swift */; };
 		D709A2681DE0281100F42086 /* Route+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2601DE0281100F42086 /* Route+CoreDataProperties.swift */; };
+		D709A26A1DE02C8B00F42086 /* Extansions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2691DE02C8B00F42086 /* Extansions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		D709A25E1DE0281100F42086 /* Gallery+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Gallery+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D709A25F1DE0281100F42086 /* Route+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Route+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D709A2601DE0281100F42086 /* Route+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Route+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D709A2691DE02C8B00F42086 /* Extansions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extansions.swift; sourceTree = "<group>"; };
 		FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HackatonApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -223,6 +225,7 @@
 				5063553B1DDFD8F800AEC84B /* Info.plist */,
 				506355331DDFD8F800AEC84B /* HackatonApp.xcdatamodeld */,
 				506355271DDFD8F800AEC84B /* Supporting Files */,
+				D709A2691DE02C8B00F42086 /* Extansions.swift */,
 			);
 			path = HackatonApp;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				D709A2581DE01FD400F42086 /* CoreDataManager.swift in Sources */,
 				D709A2621DE0281100F42086 /* Point+CoreDataProperties.swift in Sources */,
 				04E85D321DE01D78007DA2E7 /* HAErrorHelper.m in Sources */,
+				D709A26A1DE02C8B00F42086 /* Extansions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

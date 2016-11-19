@@ -11,5 +11,7 @@ import CoreData
 
 
 public class Category: NSManagedObject {
-
+    override class func getEntityName() -> String {
+        return "Category"
+    }
 }

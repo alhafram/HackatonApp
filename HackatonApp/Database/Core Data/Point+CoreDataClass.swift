@@ -11,5 +11,8 @@ import CoreData
 
 
 public class Point: NSManagedObject {
+    override class func getEntityName() -> String {
+        return "Point"
+    }
 
 }

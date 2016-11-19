@@ -11,5 +11,7 @@ import CoreData
 
 
 public class Route: NSManagedObject {
-
+    override class func getEntityName() -> String {
+        return "Route"
+    }
 }

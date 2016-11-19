@@ -11,5 +11,7 @@ import CoreData
 
 
 public class Gallery: NSManagedObject {
-
+    override class func getEntityName() -> String {
+        return "Gallery"
+    }
 }
