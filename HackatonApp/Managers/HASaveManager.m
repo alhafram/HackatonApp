@@ -35,8 +35,7 @@
 }
 
 - (UIImage *)getImageByName:(NSString *)imageName {
-    UIImage* image = [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", path, imageName]];
-    return image;
+    return [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", path, imageName]];
 }
 
 @end
