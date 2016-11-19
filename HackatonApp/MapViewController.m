@@ -6,7 +6,7 @@
 //  Copyright © 2016 Albert. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MapViewController.h"
 @import GoogleMaps;
 
 @interface CoordsList : NSObject
@@ -41,7 +41,7 @@
 @end
 
 
-@implementation ViewController {
+@implementation MapViewController {
     
     GMSMapView *_mapView;
     GMSMarker *_fadedMarker;
@@ -63,6 +63,7 @@
     marker0.title = @"Netherlands";
     marker0.map = _mapView;
     marker0.icon = [UIImage imageNamed:@"black_dot"];
+    marker0.snippet = @"This is snppet";
     
     GMSMarker* marker1 = [GMSMarker markerWithPosition:CLLocationCoordinate2DMake(51.471386 , -0.457148)];
     marker1.title = @"London";
@@ -78,7 +79,6 @@
     
     
     _mapView.camera = [GMSCameraPosition cameraWithLatitude:marker0.position.latitude longitude:marker0.position.longitude zoom:5];
-    _mapView.delegate = self;
     
     [_mapForView addSubview:_mapView];
     [self.view addSubview:_mapForView];
@@ -108,7 +108,7 @@
     [CATransaction begin];
     [CATransaction setAnimationDuration:(distance / (100 * 1000))];  // custom duration, 50km/sec
     
-    __weak ViewController *weakSelf = self;
+    __weak MapViewController *weakSelf = self;
     [CATransaction setCompletionBlock:^{
         
         if(first.latitude != coord.latitude && first.longitude != coord.longitude) {

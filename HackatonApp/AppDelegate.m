@@ -11,6 +11,8 @@
 #import "HANetworkManager.h"
 #import "HackatonApp-Swift.h"
 #import "HAParseManager.h"
+@import GoogleMaps;
+
 
 @interface AppDelegate ()
 
@@ -25,6 +27,7 @@
 //    }];
 //    
 //    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    [GMSServices provideAPIKey:@"AIzaSyAHKH9Yai6XPfUx692OsN8XJOJ8Qavbcdw"];
 
     return YES;
 }
