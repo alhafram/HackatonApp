@@ -9,8 +9,10 @@
 import UIKit
 import Segmentio
 
-class FeedViewController: UIViewController {
+class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return UIStatusBarStyle.lightContent
     }
@@ -42,6 +44,7 @@ class FeedViewController: UIViewController {
     }
     
     func prepreNavigationBar() -> Void {
+        self.navigationController?.navigationBar.barTintColor = UIColor.red
         self.navigationController?
             .navigationBar
             .setBottomBorderColor(
@@ -55,7 +58,7 @@ class FeedViewController: UIViewController {
         
     }
     
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,5 +81,24 @@ class FeedViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+}
 
+extension FeedViewController {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (RouteManager.instance.getRoutes()?.count)!
+    }
+    
+    @objc(tableView:cellForRowAtIndexPath:) func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+//        MainTableViewCell* cell = [[[NSBundle mainBundle] loadNibNamed:@"MainTableViewCell" owner:self options:nil] firstObject];
+        
+        let cell = Bundle.main.loadNibNamed("HAFeedCell", owner: self, options: nil)?.first as! HAFeedCell
+        cell.routeModel = RouteManager.instance.getRoutes()?[indexPath.row]
+        
+        return cell
+    }
+    
+    @objc(tableView:heightForRowAtIndexPath:) func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 140
+    }
 }

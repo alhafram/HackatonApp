@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="P0a-62-Yau">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="P0a-62-Yau">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -39,16 +38,21 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rCh-fi-B2A">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rCh-fi-B2A">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hNt-qc-t6G" id="p66-Xn-3TR"/>
+                                    <outlet property="delegate" destination="hNt-qc-t6G" id="eX3-jZ-7bQ"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xqL-CH-v5l" firstAttribute="top" secondItem="rCh-fi-B2A" secondAttribute="bottom" id="3Vj-cu-vWb"/>
-                            <constraint firstItem="rCh-fi-B2A" firstAttribute="top" secondItem="vI0-IL-bz1" secondAttribute="bottom" id="3X2-gb-1Jt"/>
-                            <constraint firstItem="rCh-fi-B2A" firstAttribute="leading" secondItem="wc7-qo-qiK" secondAttribute="leadingMargin" id="cjt-dq-M8s"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rCh-fi-B2A" secondAttribute="trailing" id="tDE-y1-qgZ"/>
+                            <constraint firstItem="rCh-fi-B2A" firstAttribute="top" secondItem="vI0-IL-bz1" secondAttribute="bottom" constant="40" id="3X2-gb-1Jt"/>
+                            <constraint firstItem="rCh-fi-B2A" firstAttribute="leading" secondItem="wc7-qo-qiK" secondAttribute="leading" id="cjt-dq-M8s"/>
+                            <constraint firstAttribute="trailing" secondItem="rCh-fi-B2A" secondAttribute="trailing" id="tDE-y1-qgZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="HackatonApp" id="gX2-wE-VFw">
@@ -56,10 +60,13 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="rCh-fi-B2A" id="6n7-3c-K4V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xIt-R2-gqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-236" y="64"/>
+            <point key="canvasLocation" x="-236" y="63.418290854572717"/>
         </scene>
     </scenes>
     <resources>
