@@ -33,37 +33,39 @@
     
     for (NSDictionary* dict in picturesArray) {
         Gallery* gallery = [[Database instance] addGalleryEntityWithImage:dict[@"url"]
-                                                                   obj_id:(int64_t)dict[@"id"]];
+                                                                   obj_id:[dict[@"id"] integerValue]];
         [gallerySet addObject:gallery];
     }
     
     for (NSDictionary* dict in categoriesArray) {
-        RouteCategory* category = [[Database instance] addRouteCategoryEntityWithObj_id:(int64_t)dict[@"id"]
+        RouteCategory* category = [[Database instance] addRouteCategoryEntityWithObj_id:[dict[@"id"] integerValue]
                                                                                    name:dict[@"name"]];
         [categoriesSet addObject:category];
     }
     
     for (NSDictionary* dict in pointsArray) {
-        Node* node = [[Database instance] addNodeEntityWithObj_id:dict[@"id"]
+        Node* node = [[Database instance] addNodeEntityWithObj_id:[dict[@"id"] integerValue]
                                                 name:dict[@"name"]
                                                 time:dict[@"time"]
                                                  pin:dict[@"pinPicture"]];
         [nodesSet addObject:node];
     }
-    
+
     for (NSDictionary* dict in routesArray) {
         
         [[Database instance] addRouteEntityWithName:dict[@"name"]
-                                             rating:(int64_t)dict[@"rating"]
-                                           duration:(int64_t)dict[@"duration"]
-                                              price:(int64_t)dict[@"price"]
+                                             rating:[dict[@"rating"] floatValue]
+                                           duration:[dict[@"duration"] integerValue]
+                                              price:[dict[@"price"] integerValue]
                                               cover:dict[@"cover"]
-                                             obj_id:(int64_t)dict[@"id"]
+                                             obj_id:[dict[@"id"] integerValue]
                                               descr:dict[@"description"]
                                              points:nodesSet
                                             gallery:gallerySet
                                            category:categoriesSet];
     }
+    
+    [[Database instance] resetDatabase];
 }
 
 @end
