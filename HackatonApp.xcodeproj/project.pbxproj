@@ -20,6 +20,9 @@
 		04E85D4A1DE0D22B007DA2E7 /* RouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D491DE0D22B007DA2E7 /* RouteModel.swift */; };
 		04E85D511DE0D2E6007DA2E7 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E85D501DE0D2E6007DA2E7 /* Feed.storyboard */; };
 		04E85D531DE0D2F4007DA2E7 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E85D521DE0D2F4007DA2E7 /* Detail.storyboard */; };
+		04E85D571DE0D33D007DA2E7 /* HAFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D551DE0D33D007DA2E7 /* HAFeedCell.m */; };
+		04E85D581DE0D33D007DA2E7 /* HAFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E85D561DE0D33D007DA2E7 /* HAFeedCell.xib */; };
+		04E85D5A1DE0D44C007DA2E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E85D591DE0D44C007DA2E7 /* Images.xcassets */; };
 		506355291DDFD8F800AEC84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 506355281DDFD8F800AEC84B /* main.m */; };
 		5063552C1DDFD8F800AEC84B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5063552B1DDFD8F800AEC84B /* AppDelegate.m */; };
 		506355321DDFD8F800AEC84B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506355301DDFD8F800AEC84B /* Main.storyboard */; };
@@ -68,6 +71,10 @@
 		04E85D491DE0D22B007DA2E7 /* RouteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteModel.swift; sourceTree = "<group>"; };
 		04E85D501DE0D2E6007DA2E7 /* Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		04E85D521DE0D2F4007DA2E7 /* Detail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		04E85D541DE0D33D007DA2E7 /* HAFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAFeedCell.h; sourceTree = "<group>"; };
+		04E85D551DE0D33D007DA2E7 /* HAFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFeedCell.m; sourceTree = "<group>"; };
+		04E85D561DE0D33D007DA2E7 /* HAFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAFeedCell.xib; sourceTree = "<group>"; };
+		04E85D591DE0D44C007DA2E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		506355241DDFD8F800AEC84B /* HackatonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackatonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506355281DDFD8F800AEC84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5063552A1DDFD8F800AEC84B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +136,9 @@
 		04C335B41DE004F0005D633B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04E85D541DE0D33D007DA2E7 /* HAFeedCell.h */,
+				04E85D551DE0D33D007DA2E7 /* HAFeedCell.m */,
+				04E85D561DE0D33D007DA2E7 /* HAFeedCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,6 +224,7 @@
 		04E85D4C1DE0D2C6007DA2E7 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				04E85D591DE0D44C007DA2E7 /* Images.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -394,6 +405,8 @@
 			files = (
 				04E85D511DE0D2E6007DA2E7 /* Feed.storyboard in Resources */,
 				5063553A1DDFD8F800AEC84B /* LaunchScreen.storyboard in Resources */,
+				04E85D5A1DE0D44C007DA2E7 /* Images.xcassets in Resources */,
+				04E85D581DE0D33D007DA2E7 /* HAFeedCell.xib in Resources */,
 				506355371DDFD8F800AEC84B /* Assets.xcassets in Resources */,
 				04E85D531DE0D2F4007DA2E7 /* Detail.storyboard in Resources */,
 				506355321DDFD8F800AEC84B /* Main.storyboard in Resources */,
@@ -474,6 +487,7 @@
 				04E85D351DE01D9D007DA2E7 /* NSDictionary+Helper.m in Sources */,
 				D709A2611DE0281100F42086 /* Node+CoreDataClass.swift in Sources */,
 				04E85D4A1DE0D22B007DA2E7 /* RouteModel.swift in Sources */,
+				04E85D571DE0D33D007DA2E7 /* HAFeedCell.m in Sources */,
 				506355291DDFD8F800AEC84B /* main.m in Sources */,
 				D709A2661DE0281100F42086 /* Gallery+CoreDataProperties.swift in Sources */,
 				D709A2581DE01FD400F42086 /* CoreDataManager.swift in Sources */,
