@@ -20,15 +20,18 @@
 		04E85D4A1DE0D22B007DA2E7 /* RouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D491DE0D22B007DA2E7 /* RouteModel.swift */; };
 		04E85D511DE0D2E6007DA2E7 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E85D501DE0D2E6007DA2E7 /* Feed.storyboard */; };
 		04E85D531DE0D2F4007DA2E7 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E85D521DE0D2F4007DA2E7 /* Detail.storyboard */; };
-		255120E061504B60EA1E391F /* Pods_HackatonApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9018F3213D675048ABD73C59 /* Pods_HackatonApp.framework */; };
+		04E85D571DE0D33D007DA2E7 /* HAFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D551DE0D33D007DA2E7 /* HAFeedCell.m */; };
+		04E85D581DE0D33D007DA2E7 /* HAFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E85D561DE0D33D007DA2E7 /* HAFeedCell.xib */; };
+		04E85D5A1DE0D44C007DA2E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E85D591DE0D44C007DA2E7 /* Images.xcassets */; };
 		506355291DDFD8F800AEC84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 506355281DDFD8F800AEC84B /* main.m */; };
 		5063552C1DDFD8F800AEC84B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5063552B1DDFD8F800AEC84B /* AppDelegate.m */; };
 		506355321DDFD8F800AEC84B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506355301DDFD8F800AEC84B /* Main.storyboard */; };
+		50A3AAC91DE0DB7E008C5CCD /* CustomSnippetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3AAC71DE0DB7E008C5CCD /* CustomSnippetView.m */; };
+		50A3AACA1DE0DB7E008C5CCD /* CustomSnippetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A3AAC81DE0DB7E008C5CCD /* CustomSnippetView.xib */; };
 		506355351DDFD8F800AEC84B /* HackatonApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 506355331DDFD8F800AEC84B /* HackatonApp.xcdatamodeld */; };
 		506355371DDFD8F800AEC84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506355361DDFD8F800AEC84B /* Assets.xcassets */; };
 		5063553A1DDFD8F800AEC84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506355381DDFD8F800AEC84B /* LaunchScreen.storyboard */; };
-		50A3AAC91DE0DB7E008C5CCD /* CustomSnippetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3AAC71DE0DB7E008C5CCD /* CustomSnippetView.m */; };
-		50A3AACA1DE0DB7E008C5CCD /* CustomSnippetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A3AAC81DE0DB7E008C5CCD /* CustomSnippetView.xib */; };
+		64CB7BE1D20E4FFF6AE11499 /* libPods-HackatonApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */; };
 		D709A2581DE01FD400F42086 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2571DE01FD400F42086 /* CoreDataManager.swift */; };
 		D709A2611DE0281100F42086 /* Node+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2591DE0281100F42086 /* Node+CoreDataClass.swift */; };
 		D709A2621DE0281100F42086 /* Node+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25A1DE0281100F42086 /* Node+CoreDataProperties.swift */; };
@@ -41,6 +44,8 @@
 		D709A26A1DE02C8B00F42086 /* Extansions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2691DE02C8B00F42086 /* Extansions.swift */; };
 		D709A2741DE0687800F42086 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2731DE0687800F42086 /* Sample.swift */; };
 		D709A2761DE08AF400F42086 /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2751DE08AF400F42086 /* RouteManager.swift */; };
+		D78B59611DE0F04100FFF383 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B59601DE0F04100FFF383 /* FeedViewController.swift */; };
+		D78B59631DE0F08E00FFF383 /* SementedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B59621DE0F08E00FFF383 /* SementedController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +75,13 @@
 		04E85D491DE0D22B007DA2E7 /* RouteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteModel.swift; sourceTree = "<group>"; };
 		04E85D501DE0D2E6007DA2E7 /* Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		04E85D521DE0D2F4007DA2E7 /* Detail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		04E85D541DE0D33D007DA2E7 /* HAFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAFeedCell.h; sourceTree = "<group>"; };
+		04E85D551DE0D33D007DA2E7 /* HAFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFeedCell.m; sourceTree = "<group>"; };
+		04E85D561DE0D33D007DA2E7 /* HAFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAFeedCell.xib; sourceTree = "<group>"; };
+		50A3AAC61DE0DB7E008C5CCD /* CustomSnippetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomSnippetView.h; path = HackatonApp/CustomSnippetView.h; sourceTree = SOURCE_ROOT; };
+		50A3AAC71DE0DB7E008C5CCD /* CustomSnippetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomSnippetView.m; path = HackatonApp/CustomSnippetView.m; sourceTree = SOURCE_ROOT; };
+		50A3AAC81DE0DB7E008C5CCD /* CustomSnippetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomSnippetView.xib; path = HackatonApp/CustomSnippetView.xib; sourceTree = SOURCE_ROOT; };
+		04E85D591DE0D44C007DA2E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		506355241DDFD8F800AEC84B /* HackatonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackatonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506355281DDFD8F800AEC84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5063552A1DDFD8F800AEC84B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,10 +91,6 @@
 		506355361DDFD8F800AEC84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		506355391DDFD8F800AEC84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5063553B1DDFD8F800AEC84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		50A3AAC61DE0DB7E008C5CCD /* CustomSnippetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomSnippetView.h; path = HackatonApp/CustomSnippetView.h; sourceTree = SOURCE_ROOT; };
-		50A3AAC71DE0DB7E008C5CCD /* CustomSnippetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomSnippetView.m; path = HackatonApp/CustomSnippetView.m; sourceTree = SOURCE_ROOT; };
-		50A3AAC81DE0DB7E008C5CCD /* CustomSnippetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomSnippetView.xib; path = HackatonApp/CustomSnippetView.xib; sourceTree = SOURCE_ROOT; };
-		9018F3213D675048ABD73C59 /* Pods_HackatonApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackatonApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9376501FD978EF51448B65F7 /* Pods-HackatonApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D4C6DEB739557E9E51A7FD3E /* Pods-HackatonApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.release.xcconfig"; sourceTree = "<group>"; };
 		D709A2571DE01FD400F42086 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -97,6 +105,9 @@
 		D709A2691DE02C8B00F42086 /* Extansions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extansions.swift; sourceTree = "<group>"; };
 		D709A2731DE0687800F42086 /* Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		D709A2751DE08AF400F42086 /* RouteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
+		D78B59601DE0F04100FFF383 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		D78B59621DE0F08E00FFF383 /* SementedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SementedController.swift; path = Segmentio/SementedController.swift; sourceTree = "<group>"; };
+		FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HackatonApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				255120E061504B60EA1E391F /* Pods_HackatonApp.framework in Frameworks */,
+				64CB7BE1D20E4FFF6AE11499 /* libPods-HackatonApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +125,7 @@
 		04C335B11DE004F0005D633B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D78B59601DE0F04100FFF383 /* FeedViewController.swift */,
 				04E85D461DE0D21D007DA2E7 /* MapViewController.h */,
 				04E85D471DE0D21D007DA2E7 /* MapViewController.m */,
 			);
@@ -137,6 +149,9 @@
 				50A3AAC61DE0DB7E008C5CCD /* CustomSnippetView.h */,
 				50A3AAC71DE0DB7E008C5CCD /* CustomSnippetView.m */,
 				50A3AAC81DE0DB7E008C5CCD /* CustomSnippetView.xib */,
+				04E85D541DE0D33D007DA2E7 /* HAFeedCell.h */,
+				04E85D551DE0D33D007DA2E7 /* HAFeedCell.m */,
+				04E85D561DE0D33D007DA2E7 /* HAFeedCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,6 +181,7 @@
 		04E85D2C1DE01D5E007DA2E7 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				D78B59621DE0F08E00FFF383 /* SementedController.swift */,
 				04E85D2D1DE01D5E007DA2E7 /* HelperCategories */,
 			);
 			path = Library;
@@ -222,6 +238,7 @@
 		04E85D4C1DE0D2C6007DA2E7 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				04E85D591DE0D44C007DA2E7 /* Images.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -291,7 +308,7 @@
 		5F0C11DAF1915F43A7D1D8E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9018F3213D675048ABD73C59 /* Pods_HackatonApp.framework */,
+				FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -345,15 +362,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5063553E1DDFD8F800AEC84B /* Build configuration list for PBXNativeTarget "HackatonApp" */;
 			buildPhases = (
-				5040B30BD92F6DF8D39616B2 /* [CP] Check Pods Manifest.lock */,
 				FBD74A0A7B935F5564A9ED29 /* [CP] Check Pods Manifest.lock */,
 				506355201DDFD8F800AEC84B /* Sources */,
 				506355211DDFD8F800AEC84B /* Frameworks */,
 				506355221DDFD8F800AEC84B /* Resources */,
 				31150A5D5063798F57F1891F /* [CP] Embed Pods Frameworks */,
 				52906016A13EE11443B21DC4 /* [CP] Copy Pods Resources */,
-				5E7E01280D7A997C228722D1 /* 📦 Embed Pods Frameworks */,
-				BA73513A60A32CA89B5214DF /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -405,8 +419,10 @@
 			files = (
 				04E85D511DE0D2E6007DA2E7 /* Feed.storyboard in Resources */,
 				5063553A1DDFD8F800AEC84B /* LaunchScreen.storyboard in Resources */,
-				506355371DDFD8F800AEC84B /* Assets.xcassets in Resources */,
+				04E85D5A1DE0D44C007DA2E7 /* Images.xcassets in Resources */,
 				50A3AACA1DE0DB7E008C5CCD /* CustomSnippetView.xib in Resources */,
+				04E85D581DE0D33D007DA2E7 /* HAFeedCell.xib in Resources */,
+				506355371DDFD8F800AEC84B /* Assets.xcassets in Resources */,
 				04E85D531DE0D2F4007DA2E7 /* Detail.storyboard in Resources */,
 				506355321DDFD8F800AEC84B /* Main.storyboard in Resources */,
 			);
@@ -430,21 +446,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5040B30BD92F6DF8D39616B2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		52906016A13EE11443B21DC4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,36 +454,6 @@
 			inputPaths = (
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5E7E01280D7A997C228722D1 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BA73513A60A32CA89B5214DF /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,6 +490,7 @@
 				50A3AAC91DE0DB7E008C5CCD /* CustomSnippetView.m in Sources */,
 				04E85D3C1DE02C41007DA2E7 /* HANMRoutesComponent.m in Sources */,
 				D709A2761DE08AF400F42086 /* RouteManager.swift in Sources */,
+				D78B59611DE0F04100FFF383 /* FeedViewController.swift in Sources */,
 				5063552C1DDFD8F800AEC84B /* AppDelegate.m in Sources */,
 				506355351DDFD8F800AEC84B /* HackatonApp.xcdatamodeld in Sources */,
 				D709A2631DE0281100F42086 /* RouteCategory+CoreDataClass.swift in Sources */,
@@ -532,7 +504,9 @@
 				04E85D351DE01D9D007DA2E7 /* NSDictionary+Helper.m in Sources */,
 				D709A2611DE0281100F42086 /* Node+CoreDataClass.swift in Sources */,
 				04E85D4A1DE0D22B007DA2E7 /* RouteModel.swift in Sources */,
+				04E85D571DE0D33D007DA2E7 /* HAFeedCell.m in Sources */,
 				506355291DDFD8F800AEC84B /* main.m in Sources */,
+				D78B59631DE0F08E00FFF383 /* SementedController.swift in Sources */,
 				D709A2661DE0281100F42086 /* Gallery+CoreDataProperties.swift in Sources */,
 				D709A2581DE01FD400F42086 /* CoreDataManager.swift in Sources */,
 				D709A2621DE0281100F42086 /* Node+CoreDataProperties.swift in Sources */,

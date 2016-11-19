@@ -1,7 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="P0a-62-Yau">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="AzX-W4-4bg">
+            <objects>
+                <navigationController id="P0a-62-Yau" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Wmf-IB-tsn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hNt-qc-t6G" kind="relationship" relationship="rootViewController" id="hDD-7L-Jj4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nt8-7m-BOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1174" y="63"/>
+        </scene>
+        <!--HackatonApp-->
+        <scene sceneID="ElL-ky-Wui">
+            <objects>
+                <viewController id="hNt-qc-t6G" customClass="FeedViewController" customModule="HackatonApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vI0-IL-bz1"/>
+                        <viewControllerLayoutGuide type="bottom" id="xqL-CH-v5l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wc7-qo-qiK">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rCh-fi-B2A">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xqL-CH-v5l" firstAttribute="top" secondItem="rCh-fi-B2A" secondAttribute="bottom" id="3Vj-cu-vWb"/>
+                            <constraint firstItem="rCh-fi-B2A" firstAttribute="top" secondItem="vI0-IL-bz1" secondAttribute="bottom" id="3X2-gb-1Jt"/>
+                            <constraint firstItem="rCh-fi-B2A" firstAttribute="leading" secondItem="wc7-qo-qiK" secondAttribute="leadingMargin" id="cjt-dq-M8s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rCh-fi-B2A" secondAttribute="trailing" id="tDE-y1-qgZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="HackatonApp" id="gX2-wE-VFw">
+                        <barButtonItem key="rightBarButtonItem" image="settings-3" id="dvw-7v-bTv">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xIt-R2-gqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236" y="64"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="settings-3" width="24" height="23"/>
+    </resources>
 </document>
