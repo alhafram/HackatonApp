@@ -68,7 +68,7 @@
                                              rating:[dict[@"rating"] floatValue]
                                            duration:[dict[@"duration"] integerValue]
                                               price:[dict[@"price"] integerValue]
-                                              cover:dict[@"cover"]
+                                              cover:imageName
                                              obj_id:[dict[@"id"] integerValue]
                                               descr:dict[@"description"]
                                              points:nodesSet

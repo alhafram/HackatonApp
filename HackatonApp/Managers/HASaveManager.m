@@ -38,12 +38,13 @@
 }
 
 - (UIImage *)getImageByName:(NSString *)imageName {
+    
     NSString* fileName = [path stringByAppendingFormat:@"/%@", imageName];
     
     if (![[NSFileManager defaultManager] fileExistsAtPath:fileName]) {
         return [UIImage imageNamed:@"picture_placeholder"];
     } else {
-        return [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", path, imageName]];
+        return [UIImage imageWithContentsOfFile: fileName];
     }
 }
 

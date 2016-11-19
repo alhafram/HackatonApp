@@ -13,6 +13,8 @@
 #import "HANetworkManager.h"
 #import "HAParseManager.h"
 
+#import "HackatonApp-Swift.h"
+
 @interface CoordsList : NSObject
 
 @property(nonatomic, readonly, copy) GMSPath *path;
@@ -55,6 +57,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSArray* arr = [[RouteManager instance] getRoutes];
+    
+    for (RouteModel* rm in arr) {
+        NSLog(@"ID: %lld", rm.obj_id);
+        NSLog(@"Name: %@", rm.name);
+        NSLog(@"Rating: %lld", rm.rating);
+        NSLog(@"Duration: %lld", rm.duration);
+        NSLog(@"Price: %lld", rm.price);
+        NSLog(@"Desc: %@", rm.descr);
+        
+        for (UIImage* img in rm.gallery) {
+            NSLog(@"%@", img.description);
+        }
+        
+        for (RouteCategory* rc in rm.category) {
+            NSLog(@"Category name: %@", rc.name);
+            NSLog(@"Category id: %lld", rc.obj_id);
+        }
+        
+        for (Node* node in rm.points) {
+            NSLog(@"Node name: %@", node.name);
+            NSLog(@"Node id: %lld", node.obj_id);
+            NSLog(@"Node time: %@", node.time);
+            NSLog(@"Node pin: %@", node.pin);
+            NSLog(@"Node coord: %@", node.coordinate);
+            
+        }
+        
+        NSLog(@"--------------------------");
+    }
     
     HANMRoutesComponent* r = [[HANMRoutesComponent alloc] initWithNetManager:[HANetworkManager sharedInstance]];
     [r getAllRouteseWithCompletionBlock:^(BOOL success, NSError *error, id responseData) {
