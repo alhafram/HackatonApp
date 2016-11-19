@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15F34" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Category" syncable="YES">
+    <entity name="Category" representedClassName=".Category" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="obj_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="routs" toMany="YES" deletionRule="Nullify" destinationEntity="Route" inverseName="category" inverseEntity="Route" syncable="YES"/>
     </entity>
-    <entity name="Gallery" syncable="YES">
+    <entity name="Gallery" representedClassName=".Gallery" syncable="YES">
         <attribute name="image" attributeType="String" syncable="YES"/>
         <attribute name="obj_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="routs" toMany="YES" deletionRule="Nullify" destinationEntity="Route" inverseName="gallery" inverseEntity="Route" syncable="YES"/>
     </entity>
-    <entity name="Point" syncable="YES">
+    <entity name="Point" representedClassName=".Point" syncable="YES">
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="obj_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="pin" attributeType="String" syncable="YES"/>
         <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="routs" toMany="YES" deletionRule="Nullify" destinationEntity="Route" inverseName="points" inverseEntity="Route" syncable="YES"/>
     </entity>
-    <entity name="Route" syncable="YES">
+    <entity name="Route" representedClassName=".Route" syncable="YES">
         <attribute name="cover" attributeType="String" syncable="YES"/>
         <attribute name="descr" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="duration" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -30,9 +30,9 @@
         <relationship name="points" toMany="YES" deletionRule="Nullify" destinationEntity="Point" inverseName="routs" inverseEntity="Point" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Route" positionX="-63" positionY="-18" width="128" height="195"/>
-        <element name="Point" positionX="180" positionY="153" width="128" height="120"/>
-        <element name="Gallery" positionX="207" positionY="-36" width="128" height="90"/>
-        <element name="Category" positionX="-261" positionY="108" width="128" height="90"/>
+        <element name="Route" positionX="-63" positionY="-18" width="128" height="193"/>
+        <element name="Point" positionX="180" positionY="153" width="128" height="118"/>
+        <element name="Gallery" positionX="207" positionY="-36" width="128" height="88"/>
+        <element name="Category" positionX="-261" positionY="108" width="128" height="88"/>
     </elements>
 </model>
