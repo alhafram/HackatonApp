@@ -9,8 +9,15 @@
 import Foundation
 import CoreData
 
-class Database {
+@objc class Database: NSObject {
     static let instance = Database()
+    
+    @objc func resetDatabase() -> Void {
+        self.deleteRouteEntities()
+        self.deleteNodeEntities()
+        self.deleteGalleryEntities()
+        self.deleteRouteCategoryEntities()
+    }
     
     @objc @discardableResult func addRouteEntity(
         name: String, rating: Int64, duration: Int64,
@@ -18,7 +25,10 @@ class Database {
         descr: String, points: Set<Node>,
         gallery: Set<Gallery>, category: Set<RouteCategory>) -> Route {
         
-        let route = Route()
+        let route = NSEntityDescription.insertNewObject(
+            forEntityName: Route.getEntityName(),
+            into: CoreDataManager.instance.managedObjectContext) as! Route
+        
         route.name = name
         route.rating = rating
         route.duration = duration
@@ -34,7 +44,7 @@ class Database {
         return route
     }
     
-    @objc func deleteRouteServiceEntities() -> Void {
+    @objc func deleteRouteEntities() -> Void {
         let deleteEntities: [Route]? = self.getEntities()
         if let deleteEntities = deleteEntities {
             self.deleteEntities(entities: deleteEntities)
@@ -45,18 +55,21 @@ class Database {
         obj_id: Int64, name: String, time: String,
         pin: String, routes: Set<Route>) -> Node {
         
-        let point = Node()
-        point.obj_id = obj_id
-        point.name = name
-        point.time = time
-        point.pin = pin
-        point.routs = routes
+        let node = NSEntityDescription.insertNewObject(
+            forEntityName: Node.getEntityName(),
+            into: CoreDataManager.instance.managedObjectContext) as! Node
+        
+        node.obj_id = obj_id
+        node.name = name
+        node.time = time
+        node.pin = pin
+        node.routs = routes
         
         CoreDataManager.saveContext()
-        return point
+        return node
     }
     
-    @objc func deletePointEntities() -> Void {
+    @objc func deleteNodeEntities() -> Void {
         let deleteEntities: [Node]? = self.getEntities()
         if let deleteEntities = deleteEntities {
             self.deleteEntities(entities: deleteEntities)
@@ -65,7 +78,10 @@ class Database {
     
     @objc @discardableResult func addGalleryEntity(
         image: String, obj_id: Int64) -> Gallery {
-        let gallery = Gallery()
+        
+        let gallery = NSEntityDescription.insertNewObject(
+            forEntityName: Gallery.getEntityName(),
+            into: CoreDataManager.instance.managedObjectContext) as! Gallery
         
         gallery.image = image
         gallery.obj_id = obj_id
@@ -81,18 +97,21 @@ class Database {
         }
     }
     
-    @objc @discardableResult func addCategoryEntity(
+    @objc @discardableResult func addRouteCategoryEntity(
         obj_id: Int64, name: String) -> RouteCategory {
-        let category = RouteCategory()
         
-        category.obj_id = obj_id
-        category.name = name
+        let routeCategory = NSEntityDescription.insertNewObject(
+            forEntityName: RouteCategory.getEntityName(),
+            into: CoreDataManager.instance.managedObjectContext) as! RouteCategory
+        
+        routeCategory.obj_id = obj_id
+        routeCategory.name = name
         
         CoreDataManager.saveContext()
-        return category
+        return routeCategory
     }
     
-    @objc func deleteCategoryEntities() -> Void {
+    @objc func deleteRouteCategoryEntities() -> Void {
         let deleteEntities: [RouteCategory]? = self.getEntities()
         if let deleteEntities = deleteEntities {
             self.deleteEntities(entities: deleteEntities)
