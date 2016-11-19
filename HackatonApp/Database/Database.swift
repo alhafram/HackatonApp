@@ -106,6 +106,20 @@ import CoreData
         }
     }
     
+    @objc func getRoutesId() -> [Int]? {
+        let routes: [Route]? = self.getEntities()
+        var listId: [Int] = []
+        if let routes = routes {
+            for route in routes {
+                listId.append(
+                    Int(route.obj_id)
+                )
+            }
+            return listId
+        }
+        return nil
+    }
+    
     @objc @discardableResult func addGalleryEntity(
         image: String, obj_id: Int64) -> Gallery {
         
