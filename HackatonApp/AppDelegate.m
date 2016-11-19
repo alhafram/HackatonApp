@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "HANMRoutesComponent.h"
+#import "HANetworkManager.h"
+#import "HackatonApp-Swift.h"
+#import "HAParseManager.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +20,23 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    HANMRoutesComponent* routComp = [[HANMRoutesComponent alloc] initWithNetManager:[HANetworkManager sharedInstance]];
+    [routComp getAllRouteseWithCompletionBlock:^(BOOL success, NSError *error, id responseData) {
+        if (success) {
+            
+            [[HAParseManager sharedInstance] parseRouteDictionary:responseData];
+            
+        }
+        if (error) {
+            if (error.code == -1009 || error.code == -1001) {
+                NSLog(@"Error: %@", [error localizedDescription]);
+            } else {
+                NSLog(@"Error: %@", responseData[@"Error"]);
+            }
+        }
+    }];
+    
     return YES;
 }
 
