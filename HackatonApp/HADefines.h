@@ -20,7 +20,7 @@
 #define _(text) NSLocalizedString (text, nil)
 
 //paths
-#define kHAServerBasePath @"http://54.186.218.70/"
+#define kHAServerBasePath @"http://54.186.218.70:8000/"
 //TODO: set path for images
 #define kHAServerImagesPath @""
 
