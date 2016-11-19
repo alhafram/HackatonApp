@@ -19,6 +19,37 @@ import CoreData
         self.deleteRouteCategoryEntities()
     }
     
+    @objc func printDatabase() -> Void {
+        let routes: [Route]? = self.getEntities()
+        let nodes: [Node]? = self.getEntities()
+        let gallery: [Gallery]? = self.getEntities()
+        let routeCategories: [RouteCategory]? = self.getEntities()
+        
+        if let routes = routes {
+            for entity in routes {
+                print("routes id: \(entity.obj_id)")
+            }
+        }
+        
+        if let nodes = nodes {
+            for entity in nodes {
+                print("nodes id: \(entity.obj_id)")
+            }
+        }
+        
+        if let gallery = gallery {
+            for entity in gallery {
+                print("gallery id: \(entity.obj_id)")
+            }
+        }
+        
+        if let routeCategories = routeCategories {
+            for entity in routeCategories {
+                print("routeCategories id: \(entity.obj_id)")
+            }
+        }
+    }
+    
     @objc @discardableResult func addRouteEntity(
         name: String, rating: Int64, duration: Int64,
         price: Int64, cover: String, obj_id: Int64,
