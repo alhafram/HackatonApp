@@ -12,6 +12,7 @@
 		04E85D2B1DE01C98007DA2E7 /* HANMBaseComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D2A1DE01C98007DA2E7 /* HANMBaseComponent.m */; };
 		04E85D321DE01D78007DA2E7 /* HAErrorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D311DE01D78007DA2E7 /* HAErrorHelper.m */; };
 		04E85D351DE01D9D007DA2E7 /* NSDictionary+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D341DE01D9D007DA2E7 /* NSDictionary+Helper.m */; };
+		04E85D391DE0258B007DA2E7 /* HASaveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D381DE0258B007DA2E7 /* HASaveManager.m */; };
 		506355291DDFD8F800AEC84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 506355281DDFD8F800AEC84B /* main.m */; };
 		5063552C1DDFD8F800AEC84B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5063552B1DDFD8F800AEC84B /* AppDelegate.m */; };
 		5063552F1DDFD8F800AEC84B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5063552E1DDFD8F800AEC84B /* ViewController.m */; };
@@ -36,6 +37,8 @@
 		04E85D311DE01D78007DA2E7 /* HAErrorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAErrorHelper.m; sourceTree = "<group>"; };
 		04E85D331DE01D9D007DA2E7 /* NSDictionary+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Helper.h"; sourceTree = "<group>"; };
 		04E85D341DE01D9D007DA2E7 /* NSDictionary+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Helper.m"; sourceTree = "<group>"; };
+		04E85D371DE0258B007DA2E7 /* HASaveManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HASaveManager.h; sourceTree = "<group>"; };
+		04E85D381DE0258B007DA2E7 /* HASaveManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HASaveManager.m; sourceTree = "<group>"; };
 		506355241DDFD8F800AEC84B /* HackatonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackatonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506355281DDFD8F800AEC84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5063552A1DDFD8F800AEC84B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +151,15 @@
 			path = ProjectHelpers;
 			sourceTree = "<group>";
 		};
+		04E85D361DE0257B007DA2E7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				04E85D371DE0258B007DA2E7 /* HASaveManager.h */,
+				04E85D381DE0258B007DA2E7 /* HASaveManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		5063551B1DDFD8F800AEC84B = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +181,7 @@
 		506355261DDFD8F800AEC84B /* HackatonApp */ = {
 			isa = PBXGroup;
 			children = (
+				04E85D361DE0257B007DA2E7 /* Managers */,
 				04E85D2C1DE01D5E007DA2E7 /* Library */,
 				04E85D2E1DE01D5E007DA2E7 /* Utils */,
 				04E85D211DE01615007DA2E7 /* Network */,
@@ -345,6 +358,7 @@
 				506355351DDFD8F800AEC84B /* HackatonApp.xcdatamodeld in Sources */,
 				04E85D251DE0165B007DA2E7 /* HANetworkManager.m in Sources */,
 				04E85D2B1DE01C98007DA2E7 /* HANMBaseComponent.m in Sources */,
+				04E85D391DE0258B007DA2E7 /* HASaveManager.m in Sources */,
 				04C335B71DE0050C005D633B /* Database.swift in Sources */,
 				04E85D351DE01D9D007DA2E7 /* NSDictionary+Helper.m in Sources */,
 				506355291DDFD8F800AEC84B /* main.m in Sources */,

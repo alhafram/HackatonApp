@@ -21,6 +21,8 @@
 
 //paths
 #define kHAServerBasePath @"54.186.218.70"
+//TODO: set path for images
+#define kHAServerImagesPath @""
 
 // Blocks
 typedef void(^HAOperationCompletionBlock)(BOOL success, NSError *error);
