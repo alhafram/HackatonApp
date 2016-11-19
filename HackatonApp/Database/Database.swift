@@ -53,7 +53,7 @@ import CoreData
     
     @objc @discardableResult func addNodeEntity(
         obj_id: Int64, name: String, time: String,
-        pin: String, routes: Set<Route>) -> Node {
+        pin: String) -> Node {
         
         let node = NSEntityDescription.insertNewObject(
             forEntityName: Node.getEntityName(),
@@ -63,7 +63,6 @@ import CoreData
         node.name = name
         node.time = time
         node.pin = pin
-        node.routs = routes
         
         CoreDataManager.saveContext()
         return node
