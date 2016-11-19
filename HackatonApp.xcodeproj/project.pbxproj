@@ -16,14 +16,14 @@
 		04E85D3C1DE02C41007DA2E7 /* HANMRoutesComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D3B1DE02C41007DA2E7 /* HANMRoutesComponent.m */; };
 		04E85D421DE056E9007DA2E7 /* HAParseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D411DE056E9007DA2E7 /* HAParseManager.m */; };
 		04E85D451DE05EDE007DA2E7 /* HASettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D441DE05EDE007DA2E7 /* HASettingsManager.m */; };
+		04E85D481DE0D21D007DA2E7 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D471DE0D21D007DA2E7 /* MapViewController.m */; };
+		04E85D4A1DE0D22B007DA2E7 /* RouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D491DE0D22B007DA2E7 /* RouteModel.swift */; };
 		506355291DDFD8F800AEC84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 506355281DDFD8F800AEC84B /* main.m */; };
 		5063552C1DDFD8F800AEC84B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5063552B1DDFD8F800AEC84B /* AppDelegate.m */; };
-		5063552F1DDFD8F800AEC84B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5063552E1DDFD8F800AEC84B /* ViewController.m */; };
 		506355321DDFD8F800AEC84B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506355301DDFD8F800AEC84B /* Main.storyboard */; };
 		506355351DDFD8F800AEC84B /* HackatonApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 506355331DDFD8F800AEC84B /* HackatonApp.xcdatamodeld */; };
 		506355371DDFD8F800AEC84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506355361DDFD8F800AEC84B /* Assets.xcassets */; };
 		5063553A1DDFD8F800AEC84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506355381DDFD8F800AEC84B /* LaunchScreen.storyboard */; };
-		50A3AAB51DE09317008C5CCD /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3AAB41DE09317008C5CCD /* MapViewController.m */; };
 		64CB7BE1D20E4FFF6AE11499 /* libPods-HackatonApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */; };
 		D709A2581DE01FD400F42086 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2571DE01FD400F42086 /* CoreDataManager.swift */; };
 		D709A2611DE0281100F42086 /* Node+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2591DE0281100F42086 /* Node+CoreDataClass.swift */; };
@@ -35,7 +35,6 @@
 		D709A2671DE0281100F42086 /* Route+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25F1DE0281100F42086 /* Route+CoreDataClass.swift */; };
 		D709A2681DE0281100F42086 /* Route+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2601DE0281100F42086 /* Route+CoreDataProperties.swift */; };
 		D709A26A1DE02C8B00F42086 /* Extansions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2691DE02C8B00F42086 /* Extansions.swift */; };
-		D709A2701DE0620800F42086 /* RouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A26F1DE0620800F42086 /* RouteModel.swift */; };
 		D709A2741DE0687800F42086 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2731DE0687800F42086 /* Sample.swift */; };
 		D709A2761DE08AF400F42086 /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2751DE08AF400F42086 /* RouteManager.swift */; };
 /* End PBXBuildFile section */
@@ -62,19 +61,18 @@
 		04E85D411DE056E9007DA2E7 /* HAParseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAParseManager.m; sourceTree = "<group>"; };
 		04E85D431DE05EDE007DA2E7 /* HASettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HASettingsManager.h; sourceTree = "<group>"; };
 		04E85D441DE05EDE007DA2E7 /* HASettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HASettingsManager.m; sourceTree = "<group>"; };
+		04E85D461DE0D21D007DA2E7 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		04E85D471DE0D21D007DA2E7 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		04E85D491DE0D22B007DA2E7 /* RouteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteModel.swift; sourceTree = "<group>"; };
 		506355241DDFD8F800AEC84B /* HackatonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackatonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506355281DDFD8F800AEC84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5063552A1DDFD8F800AEC84B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5063552B1DDFD8F800AEC84B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5063552D1DDFD8F800AEC84B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5063552E1DDFD8F800AEC84B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		506355311DDFD8F800AEC84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		506355341DDFD8F800AEC84B /* HackatonApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HackatonApp.xcdatamodel; sourceTree = "<group>"; };
 		506355361DDFD8F800AEC84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		506355391DDFD8F800AEC84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5063553B1DDFD8F800AEC84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		50A3AAB31DE09317008C5CCD /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
-		50A3AAB41DE09317008C5CCD /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		9376501FD978EF51448B65F7 /* Pods-HackatonApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D4C6DEB739557E9E51A7FD3E /* Pods-HackatonApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.release.xcconfig"; sourceTree = "<group>"; };
 		D709A2571DE01FD400F42086 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 		D709A25F1DE0281100F42086 /* Route+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Route+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D709A2601DE0281100F42086 /* Route+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Route+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D709A2691DE02C8B00F42086 /* Extansions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extansions.swift; sourceTree = "<group>"; };
-		D709A26F1DE0620800F42086 /* RouteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouteModel.swift; path = HackatonApp/RouteModel.swift; sourceTree = SOURCE_ROOT; };
 		D709A2731DE0687800F42086 /* Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		D709A2751DE08AF400F42086 /* RouteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
 		FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HackatonApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +105,8 @@
 		04C335B11DE004F0005D633B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				04E85D461DE0D21D007DA2E7 /* MapViewController.h */,
+				04E85D471DE0D21D007DA2E7 /* MapViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -228,12 +227,8 @@
 				D709A2711DE062D900F42086 /* Models */,
 				04C335B21DE004F0005D633B /* Database */,
 				04C335B41DE004F0005D633B /* Views */,
-				50A3AAB31DE09317008C5CCD /* MapViewController.h */,
-				50A3AAB41DE09317008C5CCD /* MapViewController.m */,
 				5063552A1DDFD8F800AEC84B /* AppDelegate.h */,
 				5063552B1DDFD8F800AEC84B /* AppDelegate.m */,
-				5063552D1DDFD8F800AEC84B /* ViewController.h */,
-				5063552E1DDFD8F800AEC84B /* ViewController.m */,
 				506355301DDFD8F800AEC84B /* Main.storyboard */,
 				506355361DDFD8F800AEC84B /* Assets.xcassets */,
 				506355381DDFD8F800AEC84B /* LaunchScreen.storyboard */,
@@ -299,7 +294,7 @@
 		D709A2721DE0630500F42086 /* Route */ = {
 			isa = PBXGroup;
 			children = (
-				D709A26F1DE0620800F42086 /* RouteModel.swift */,
+				04E85D491DE0D22B007DA2E7 /* RouteModel.swift */,
 				D709A2751DE08AF400F42086 /* RouteManager.swift */,
 			);
 			path = Route;
@@ -428,7 +423,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5063552F1DDFD8F800AEC84B /* ViewController.m in Sources */,
 				D709A2681DE0281100F42086 /* Route+CoreDataProperties.swift in Sources */,
 				04E85D421DE056E9007DA2E7 /* HAParseManager.m in Sources */,
 				04E85D451DE05EDE007DA2E7 /* HASettingsManager.m in Sources */,
@@ -447,14 +441,14 @@
 				D709A2641DE0281100F42086 /* RouteCategory+CoreDataProperties.swift in Sources */,
 				04E85D351DE01D9D007DA2E7 /* NSDictionary+Helper.m in Sources */,
 				D709A2611DE0281100F42086 /* Node+CoreDataClass.swift in Sources */,
+				04E85D4A1DE0D22B007DA2E7 /* RouteModel.swift in Sources */,
 				506355291DDFD8F800AEC84B /* main.m in Sources */,
 				D709A2661DE0281100F42086 /* Gallery+CoreDataProperties.swift in Sources */,
 				D709A2581DE01FD400F42086 /* CoreDataManager.swift in Sources */,
 				D709A2621DE0281100F42086 /* Node+CoreDataProperties.swift in Sources */,
 				04E85D321DE01D78007DA2E7 /* HAErrorHelper.m in Sources */,
-				D709A2701DE0620800F42086 /* RouteModel.swift in Sources */,
 				D709A26A1DE02C8B00F42086 /* Extansions.swift in Sources */,
-				50A3AAB51DE09317008C5CCD /* MapViewController.m in Sources */,
+				04E85D481DE0D21D007DA2E7 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
