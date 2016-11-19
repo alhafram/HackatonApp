@@ -1,0 +1,19 @@
+//
+//  HAPrefixHeader.pch
+//  HackatonApp
+//
+//  Created by Georgij on 19.11.16.
+//  Copyright © 2016 Albert. All rights reserved.
+//
+
+#ifndef HAPrefixHeader_h
+#define HAPrefixHeader_h
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#import "HADefines.h"
+
+#endif /* HAPrefixHeader_h */
