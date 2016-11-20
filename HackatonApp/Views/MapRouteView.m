@@ -50,7 +50,6 @@
 
 @implementation MapRouteView {
     GMSMapView *_mapView;
-    GMSMarker *_fadedMarker;
     CLLocationCoordinate2D first;
     UIView* _mapForView;
     GMSMarker* me;
@@ -58,7 +57,6 @@
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
-    //_arrayNodes = [[RouteManager instance] getRoutes];
     
     self = [super initWithFrame:frame];
     if (self) {
@@ -68,7 +66,7 @@
         
         GMSMutablePath *coords;
         
-        for(Node* node in self.arrayNodes) {
+        for (Node* node in self.points) {
             
             NSArray* components = [node.coordinate componentsSeparatedByString:@","];
             GMSMarker* marker = [GMSMarker markerWithPosition:CLLocationCoordinate2DMake([[components objectAtIndex:0] floatValue], [[components objectAtIndex:1] floatValue])];
@@ -77,7 +75,7 @@
             marker.icon = [UIImage imageNamed:@"city"]; //node.pin;
             marker.snippet = [NSString stringWithFormat:@"%@, %@", node.name, node.time];
             
-            if([node isEqual:self.arrayNodes.firstObject]) {
+            if([node isEqual:self.points.firstObject]) {
                 first = marker.position;
             }
         }
@@ -91,7 +89,7 @@
         
         
         coords = [GMSMutablePath path];
-        for(Node* node in self.arrayNodes) {
+        for(Node* node in self.points) {
             
             NSArray* components = [node.coordinate componentsSeparatedByString:@","];
             [coords addLatitude:[[components objectAtIndex:0] floatValue] longitude:[[components objectAtIndex:1] floatValue]];
@@ -104,7 +102,6 @@
         me.userData = [[CoordsList alloc] initWithPath:coords];
         [self animateToNextCoord:me];
         _mapView.delegate = self;
-        
     }
     return self;
 }

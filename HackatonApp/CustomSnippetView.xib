@@ -38,7 +38,7 @@
                 <outlet property="snippet" destination="0rz-7H-OKk" id="fvg-Zn-MSb"/>
                 <outlet property="title" destination="fQ3-0T-wKk" id="b37-NB-mho"/>
             </connections>
-            <point key="canvasLocation" x="-56" y="286"/>
+            <point key="canvasLocation" x="64" y="230"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

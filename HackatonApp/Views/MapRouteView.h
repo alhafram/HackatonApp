@@ -11,6 +11,6 @@
 
 @interface MapRouteView : UIView <GMSMapViewDelegate>
 
-@property (strong, nonatomic) NSArray* arrayNodes;
+@property (strong, nonatomic) NSArray* points;
 
 @end
