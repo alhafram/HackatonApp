@@ -12,8 +12,11 @@
 @interface HAFeedCell()
 
 @property (weak, nonatomic) IBOutlet UILabel* titleLbl;
-@property (weak, nonatomic) IBOutlet UILabel* timeLbl;
-@property (weak, nonatomic) IBOutlet UILabel* ratingLbl;
+@property (weak, nonatomic) IBOutlet UILabel* ratingLbl1;
+@property (weak, nonatomic) IBOutlet UILabel* ratingLbl2;
+@property (weak, nonatomic) IBOutlet UILabel* ratingLbl3;
+@property (weak, nonatomic) IBOutlet UILabel* ratingLbl4;
+@property (weak, nonatomic) IBOutlet UILabel* ratingLbl5;
 @property (weak, nonatomic) IBOutlet UIImageView* bgrImageView;
 
 @end
@@ -33,9 +36,11 @@
 
 - (void)setRouteModel:(RouteModel *)routeModel {
     [_titleLbl setText:routeModel.name];
-    [_timeLbl setText:[NSString stringWithFormat:@"%lld", routeModel.duration]];
     // TODO- настройка шрифта для рэйтинга
-    [_ratingLbl setText:routeModel.name];
+//    [_ratingLbl setText:routeModel.name];
+    
+    
+    
     [_bgrImageView setImage:routeModel.cover];
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042842D71DE10A8400598436 /* fontello.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 042842D61DE10A8400598436 /* fontello.ttf */; };
+		042842D91DE11AAD00598436 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042842D81DE11AAD00598436 /* SettingsVC.swift */; };
 		04C335B71DE0050C005D633B /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C335B61DE0050C005D633B /* Database.swift */; };
 		04E85D251DE0165B007DA2E7 /* HANetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D241DE0165B007DA2E7 /* HANetworkManager.m */; };
 		04E85D2B1DE01C98007DA2E7 /* HANMBaseComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E85D2A1DE01C98007DA2E7 /* HANMBaseComponent.m */; };
@@ -26,11 +28,11 @@
 		506355291DDFD8F800AEC84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 506355281DDFD8F800AEC84B /* main.m */; };
 		5063552C1DDFD8F800AEC84B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5063552B1DDFD8F800AEC84B /* AppDelegate.m */; };
 		506355321DDFD8F800AEC84B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506355301DDFD8F800AEC84B /* Main.storyboard */; };
-		50A3AAC91DE0DB7E008C5CCD /* CustomSnippetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3AAC71DE0DB7E008C5CCD /* CustomSnippetView.m */; };
-		50A3AACA1DE0DB7E008C5CCD /* CustomSnippetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A3AAC81DE0DB7E008C5CCD /* CustomSnippetView.xib */; };
 		506355351DDFD8F800AEC84B /* HackatonApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 506355331DDFD8F800AEC84B /* HackatonApp.xcdatamodeld */; };
 		506355371DDFD8F800AEC84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506355361DDFD8F800AEC84B /* Assets.xcassets */; };
 		5063553A1DDFD8F800AEC84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506355381DDFD8F800AEC84B /* LaunchScreen.storyboard */; };
+		50A3AAC91DE0DB7E008C5CCD /* CustomSnippetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3AAC71DE0DB7E008C5CCD /* CustomSnippetView.m */; };
+		50A3AACA1DE0DB7E008C5CCD /* CustomSnippetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A3AAC81DE0DB7E008C5CCD /* CustomSnippetView.xib */; };
 		64CB7BE1D20E4FFF6AE11499 /* libPods-HackatonApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */; };
 		D709A2581DE01FD400F42086 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2571DE01FD400F42086 /* CoreDataManager.swift */; };
 		D709A2611DE0281100F42086 /* Node+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2591DE0281100F42086 /* Node+CoreDataClass.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042842D61DE10A8400598436 /* fontello.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fontello.ttf; sourceTree = "<group>"; };
+		042842D81DE11AAD00598436 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		04C335B51DE0050B005D633B /* HackatonApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackatonApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		04C335B61DE0050C005D633B /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		04E85D231DE0165B007DA2E7 /* HANetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HANetworkManager.h; sourceTree = "<group>"; };
@@ -78,9 +82,6 @@
 		04E85D541DE0D33D007DA2E7 /* HAFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAFeedCell.h; sourceTree = "<group>"; };
 		04E85D551DE0D33D007DA2E7 /* HAFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAFeedCell.m; sourceTree = "<group>"; };
 		04E85D561DE0D33D007DA2E7 /* HAFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAFeedCell.xib; sourceTree = "<group>"; };
-		50A3AAC61DE0DB7E008C5CCD /* CustomSnippetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomSnippetView.h; path = HackatonApp/CustomSnippetView.h; sourceTree = SOURCE_ROOT; };
-		50A3AAC71DE0DB7E008C5CCD /* CustomSnippetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomSnippetView.m; path = HackatonApp/CustomSnippetView.m; sourceTree = SOURCE_ROOT; };
-		50A3AAC81DE0DB7E008C5CCD /* CustomSnippetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomSnippetView.xib; path = HackatonApp/CustomSnippetView.xib; sourceTree = SOURCE_ROOT; };
 		04E85D591DE0D44C007DA2E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		506355241DDFD8F800AEC84B /* HackatonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackatonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506355281DDFD8F800AEC84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,6 +92,9 @@
 		506355361DDFD8F800AEC84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		506355391DDFD8F800AEC84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5063553B1DDFD8F800AEC84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50A3AAC61DE0DB7E008C5CCD /* CustomSnippetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomSnippetView.h; path = HackatonApp/CustomSnippetView.h; sourceTree = SOURCE_ROOT; };
+		50A3AAC71DE0DB7E008C5CCD /* CustomSnippetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomSnippetView.m; path = HackatonApp/CustomSnippetView.m; sourceTree = SOURCE_ROOT; };
+		50A3AAC81DE0DB7E008C5CCD /* CustomSnippetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomSnippetView.xib; path = HackatonApp/CustomSnippetView.xib; sourceTree = SOURCE_ROOT; };
 		9376501FD978EF51448B65F7 /* Pods-HackatonApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D4C6DEB739557E9E51A7FD3E /* Pods-HackatonApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.release.xcconfig"; sourceTree = "<group>"; };
 		D709A2571DE01FD400F42086 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -122,12 +126,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042842D51DE10A4F00598436 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				042842D61DE10A8400598436 /* fontello.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		04C335B11DE004F0005D633B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				D78B59601DE0F04100FFF383 /* FeedViewController.swift */,
 				04E85D461DE0D21D007DA2E7 /* MapViewController.h */,
 				04E85D471DE0D21D007DA2E7 /* MapViewController.m */,
+				042842D81DE11AAD00598436 /* SettingsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -229,6 +242,7 @@
 		04E85D4B1DE0D2C6007DA2E7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				042842D51DE10A4F00598436 /* Fonts */,
 				04E85D4C1DE0D2C6007DA2E7 /* Assets */,
 				04E85D4D1DE0D2C6007DA2E7 /* Storyboards */,
 			);
@@ -421,6 +435,7 @@
 				5063553A1DDFD8F800AEC84B /* LaunchScreen.storyboard in Resources */,
 				04E85D5A1DE0D44C007DA2E7 /* Images.xcassets in Resources */,
 				50A3AACA1DE0DB7E008C5CCD /* CustomSnippetView.xib in Resources */,
+				042842D71DE10A8400598436 /* fontello.ttf in Resources */,
 				04E85D581DE0D33D007DA2E7 /* HAFeedCell.xib in Resources */,
 				506355371DDFD8F800AEC84B /* Assets.xcassets in Resources */,
 				04E85D531DE0D2F4007DA2E7 /* Detail.storyboard in Resources */,
@@ -501,6 +516,7 @@
 				04E85D391DE0258B007DA2E7 /* HASaveManager.m in Sources */,
 				04C335B71DE0050C005D633B /* Database.swift in Sources */,
 				D709A2641DE0281100F42086 /* RouteCategory+CoreDataProperties.swift in Sources */,
+				042842D91DE11AAD00598436 /* SettingsVC.swift in Sources */,
 				04E85D351DE01D9D007DA2E7 /* NSDictionary+Helper.m in Sources */,
 				D709A2611DE0281100F42086 /* Node+CoreDataClass.swift in Sources */,
 				04E85D4A1DE0D22B007DA2E7 /* RouteModel.swift in Sources */,

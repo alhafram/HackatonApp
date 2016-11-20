@@ -58,8 +58,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.prepreNavigationBar()
@@ -71,16 +69,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func showSettingsVC(_ sender: AnyObject) {
+        let settingsVC = self.storyboard?.instantiateViewController(withIdentifier: "SettingsVC") as! SettingsVC
+        self.navigationController?.pushViewController(settingsVC, animated: true)
     }
-    */
 }
 
 extension FeedViewController {
@@ -89,8 +81,6 @@ extension FeedViewController {
     }
     
     @objc(tableView:cellForRowAtIndexPath:) func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-//        MainTableViewCell* cell = [[[NSBundle mainBundle] loadNibNamed:@"MainTableViewCell" owner:self options:nil] firstObject];
         
         let cell = Bundle.main.loadNibNamed("HAFeedCell", owner: self, options: nil)?.first as! HAFeedCell
         cell.routeModel = RouteManager.instance.getRoutes()?[indexPath.row]

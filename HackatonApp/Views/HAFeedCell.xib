@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="fontello.ttf">
+            <string>fontello</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -19,29 +24,53 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n09-UJ-11F">
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LqI-oP-t0O">
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PqM-sV-7WY">
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVv-fB-ylS">
+                                <fontDescription key="fontDescription" name="fontello" family="fontello" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVv-fB-ylS">
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dh-LK-jMU">
+                                <fontDescription key="fontDescription" name="fontello" family="fontello" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIT-mh-GaY">
+                                <fontDescription key="fontDescription" name="fontello" family="fontello" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgM-BC-6YT">
+                                <fontDescription key="fontDescription" name="fontello" family="fontello" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u97-ZX-sFk">
+                                <fontDescription key="fontDescription" name="fontello" family="fontello" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="disclosure" translatesAutoresizingMaskIntoConstraints="NO" id="BFh-Z2-T42"/>
                         </subviews>
                         <color key="backgroundColor" red="0.17254901960784313" green="0.12156862745098039" blue="0.14901960784313725" alpha="0.5" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="PqM-sV-7WY" firstAttribute="centerY" secondItem="LqI-oP-t0O" secondAttribute="centerY" id="HHO-fI-PcM"/>
+                            <constraint firstItem="kgM-BC-6YT" firstAttribute="leading" secondItem="8dh-LK-jMU" secondAttribute="trailing" constant="6" id="62K-0G-VVo"/>
+                            <constraint firstAttribute="trailing" secondItem="BFh-Z2-T42" secondAttribute="trailing" constant="15" id="A0o-zj-h33"/>
+                            <constraint firstItem="8dh-LK-jMU" firstAttribute="centerY" secondItem="eIT-mh-GaY" secondAttribute="centerY" id="C55-Oc-Nhl"/>
                             <constraint firstItem="UVv-fB-ylS" firstAttribute="top" secondItem="LqI-oP-t0O" secondAttribute="bottom" constant="8" id="NSR-yF-cIs"/>
-                            <constraint firstItem="LqI-oP-t0O" firstAttribute="leading" secondItem="n09-UJ-11F" secondAttribute="leading" constant="8" id="UXb-LF-oZj"/>
+                            <constraint firstItem="eIT-mh-GaY" firstAttribute="centerY" secondItem="UVv-fB-ylS" secondAttribute="centerY" id="RiU-mk-ggt"/>
+                            <constraint firstItem="LqI-oP-t0O" firstAttribute="leading" secondItem="n09-UJ-11F" secondAttribute="leading" constant="12" id="UXb-LF-oZj"/>
+                            <constraint firstItem="u97-ZX-sFk" firstAttribute="centerY" secondItem="kgM-BC-6YT" secondAttribute="centerY" id="WUe-hd-1Cn"/>
+                            <constraint firstItem="kgM-BC-6YT" firstAttribute="centerY" secondItem="8dh-LK-jMU" secondAttribute="centerY" id="Z1q-Lm-P4q"/>
+                            <constraint firstItem="u97-ZX-sFk" firstAttribute="leading" secondItem="kgM-BC-6YT" secondAttribute="trailing" constant="6" id="c4r-fA-qV1"/>
                             <constraint firstItem="LqI-oP-t0O" firstAttribute="centerY" secondItem="n09-UJ-11F" secondAttribute="centerY" id="ecN-v3-l83"/>
-                            <constraint firstAttribute="trailing" secondItem="PqM-sV-7WY" secondAttribute="trailing" constant="8" id="koh-BR-yII"/>
-                            <constraint firstItem="UVv-fB-ylS" firstAttribute="leading" secondItem="n09-UJ-11F" secondAttribute="leading" constant="8" id="mnq-mj-S9S"/>
+                            <constraint firstItem="8dh-LK-jMU" firstAttribute="leading" secondItem="eIT-mh-GaY" secondAttribute="trailing" constant="6" id="ffk-Jp-HeP"/>
+                            <constraint firstItem="BFh-Z2-T42" firstAttribute="centerY" secondItem="n09-UJ-11F" secondAttribute="centerY" id="fzd-ge-Hzr"/>
+                            <constraint firstItem="UVv-fB-ylS" firstAttribute="leading" secondItem="n09-UJ-11F" secondAttribute="leading" constant="12" id="mnq-mj-S9S"/>
+                            <constraint firstItem="eIT-mh-GaY" firstAttribute="leading" secondItem="UVv-fB-ylS" secondAttribute="trailing" constant="6" id="pWU-93-9S3"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -58,13 +87,12 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="bgrImageView" destination="MGv-BD-epz" id="5zs-h5-oyS"/>
-                <outlet property="ratingLbl" destination="UVv-fB-ylS" id="a2q-e9-bDG"/>
-                <outlet property="timeLbl" destination="PqM-sV-7WY" id="XWH-RY-0TO"/>
                 <outlet property="titleLbl" destination="LqI-oP-t0O" id="6AD-Td-gPa"/>
             </connections>
         </tableViewCell>
     </objects>
     <resources>
         <image name="2" width="786" height="524"/>
+        <image name="disclosure" width="27" height="27"/>
     </resources>
 </document>
