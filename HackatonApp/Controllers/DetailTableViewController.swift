@@ -7,94 +7,122 @@
 //
 
 import UIKit
+import StretchHeader
 
 class DetailTableViewController: UITableViewController {
+    
+    var header : StretchHeader!
+    var navigationView = UIView()
+    var indicator1 = UIButton(type: .custom)
+    var indicator2 = UIButton(type: .custom)
+    var indicator3 = UIButton(type: .custom)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.prepareNaviagationHeader()
+        self.prepareHeaderView()
+        self.indicator1.alpha = 0
+        self.indicator2.alpha = 0
+        self.indicator3.alpha = 0
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 1
-    }
-
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MapCell", for: indexPath)
-        
-        
-        let mapView = MapRouteView.init(frame: CGRect(x : 0, y : 0, width : self.view.frame.width, height : self.view.frame.height))
-        cell.addSubview(mapView)
-        
-
-        return cell
-    }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 300
     }
+    
+    func prepareNaviagationHeader() -> Void {
+        let navibarHeight : CGFloat = 40
+        let statusbarHeight : CGFloat = UIApplication
+            .shared
+            .statusBarFrame
+            .size
+            .height
+        navigationView.frame = CGRect(
+            x: 0,
+            y: 0,
+            width: view.frame.size.width,
+            height: navibarHeight + statusbarHeight
+        )
+        navigationView.backgroundColor = UIColor(
+            red: 121/255.0,
+            green: 193/255.0,
+            blue: 203/255.0,
+            alpha: 1.0
+        )
+        navigationView.alpha = 0.0
+        view.addSubview(navigationView)
+        
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+        indicator1.frame = CGRect(x: 30, y: 50, width: 70, height: 70)
+        indicator1.setImage(UIImage(named: "indicator")?.withRenderingMode(.alwaysTemplate), for: UIControlState())
+        indicator1.tintColor = UIColor.white
+        view.addSubview(indicator1)
+        
+        indicator2.frame = CGRect(x: 175, y: 50, width: 70, height: 70)
+        indicator2.setImage(UIImage(named: "indicator")?.withRenderingMode(.alwaysTemplate), for: UIControlState())
+        indicator2.tintColor = UIColor.white
+        view.addSubview(indicator2)
+        
+        indicator3.frame = CGRect(x: 314, y: 50, width: 70, height: 70)
+        indicator3.setImage(UIImage(named: "indicator")?.withRenderingMode(.alwaysTemplate), for: UIControlState())
+        indicator3.tintColor = UIColor.white
+        view.addSubview(indicator3)
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    
+    func prepareHeaderView() {
+        let options = StretchHeaderOptions()
+        options.position = .fullScreenTop
+        header = StretchHeader()
+        header.stretchHeaderSize(
+            headerSize: CGSize(
+                width: view.frame.size.width,
+                height: 160
+            ),
+                imageSize: CGSize(
+                    width: view.frame.size.width,
+                    height: 300
+            ),
+                controller: self,
+                options: options)
+        header.imageView.image = UIImage(named: "navHeader")
+        tableView.tableHeaderView = header
     }
-    */
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        header.updateScrollViewOffset(scrollView)
+        
+        let offset : CGFloat = scrollView.contentOffset.y
+        if (offset < 50) {
 
+            if scrollView.contentOffset.y < 0 {
+                indicator1.alpha = abs(scrollView.contentOffset.y/100)
+                indicator2.alpha = abs(scrollView.contentOffset.y/100)
+                indicator3.alpha = abs(scrollView.contentOffset.y/100)
+            }
+
+            
+        }
     }
-    */
 
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
+        //cell.textLabel?.text = "index -- \((indexPath as NSIndexPath).row)"
+        return UITableViewCell()
+    }
 
 }

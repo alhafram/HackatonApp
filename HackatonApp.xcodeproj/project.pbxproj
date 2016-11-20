@@ -33,7 +33,7 @@
 		50A3AACA1DE0DB7E008C5CCD /* CustomSnippetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A3AAC81DE0DB7E008C5CCD /* CustomSnippetView.xib */; };
 		50A3AACE1DE1068A008C5CCD /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A3AACD1DE1068A008C5CCD /* DetailTableViewController.swift */; };
 		50A3AAD11DE108A4008C5CCD /* MapRouteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3AAD01DE108A4008C5CCD /* MapRouteView.m */; };
-		64CB7BE1D20E4FFF6AE11499 /* libPods-HackatonApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */; };
+		D246BC94FE8EC7A47A00E40C /* Pods_HackatonApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569F97F7519CE500ECEE8033 /* Pods_HackatonApp.framework */; };
 		D709A2581DE01FD400F42086 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2571DE01FD400F42086 /* CoreDataManager.swift */; };
 		D709A2611DE0281100F42086 /* Node+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2591DE0281100F42086 /* Node+CoreDataClass.swift */; };
 		D709A2621DE0281100F42086 /* Node+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A25A1DE0281100F42086 /* Node+CoreDataProperties.swift */; };
@@ -46,6 +46,8 @@
 		D709A26A1DE02C8B00F42086 /* Extansions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2691DE02C8B00F42086 /* Extansions.swift */; };
 		D709A2741DE0687800F42086 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2731DE0687800F42086 /* Sample.swift */; };
 		D709A2761DE08AF400F42086 /* RouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2751DE08AF400F42086 /* RouteManager.swift */; };
+		D749D62C1DE11030000A6247 /* navHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = D749D62B1DE11030000A6247 /* navHeader.png */; };
+		D749D62E1DE11A28000A6247 /* indicator.png in Resources */ = {isa = PBXBuildFile; fileRef = D749D62D1DE11A28000A6247 /* indicator.png */; };
 		D78B59611DE0F04100FFF383 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B59601DE0F04100FFF383 /* FeedViewController.swift */; };
 		D78B59631DE0F08E00FFF383 /* SementedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B59621DE0F08E00FFF383 /* SementedController.swift */; };
 /* End PBXBuildFile section */
@@ -96,6 +98,7 @@
 		50A3AACD1DE1068A008C5CCD /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		50A3AACF1DE108A4008C5CCD /* MapRouteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapRouteView.h; sourceTree = "<group>"; };
 		50A3AAD01DE108A4008C5CCD /* MapRouteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapRouteView.m; sourceTree = "<group>"; };
+		569F97F7519CE500ECEE8033 /* Pods_HackatonApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackatonApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9376501FD978EF51448B65F7 /* Pods-HackatonApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D4C6DEB739557E9E51A7FD3E /* Pods-HackatonApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.release.xcconfig"; sourceTree = "<group>"; };
 		D709A2571DE01FD400F42086 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -110,9 +113,10 @@
 		D709A2691DE02C8B00F42086 /* Extansions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extansions.swift; sourceTree = "<group>"; };
 		D709A2731DE0687800F42086 /* Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		D709A2751DE08AF400F42086 /* RouteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteManager.swift; sourceTree = "<group>"; };
+		D749D62B1DE11030000A6247 /* navHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navHeader.png; path = "../../../../Downloads/StretchHeader-master/StretchHeaderDemo/Resources/navHeader.png"; sourceTree = "<group>"; };
+		D749D62D1DE11A28000A6247 /* indicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = indicator.png; path = ../../../../Downloads/indicator.png; sourceTree = "<group>"; };
 		D78B59601DE0F04100FFF383 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		D78B59621DE0F08E00FFF383 /* SementedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SementedController.swift; path = Segmentio/SementedController.swift; sourceTree = "<group>"; };
-		FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HackatonApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64CB7BE1D20E4FFF6AE11499 /* libPods-HackatonApp.a in Frameworks */,
+				D246BC94FE8EC7A47A00E40C /* Pods_HackatonApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +241,8 @@
 		04E85D4B1DE0D2C6007DA2E7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D749D62D1DE11A28000A6247 /* indicator.png */,
+				D749D62B1DE11030000A6247 /* navHeader.png */,
 				04E85D4C1DE0D2C6007DA2E7 /* Assets */,
 				04E85D4D1DE0D2C6007DA2E7 /* Storyboards */,
 			);
@@ -316,7 +322,7 @@
 		5F0C11DAF1915F43A7D1D8E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */,
+				569F97F7519CE500ECEE8033 /* Pods_HackatonApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -370,12 +376,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5063553E1DDFD8F800AEC84B /* Build configuration list for PBXNativeTarget "HackatonApp" */;
 			buildPhases = (
+				3FD37E2C92FCF99FA456188A /* [CP] Check Pods Manifest.lock */,
 				FBD74A0A7B935F5564A9ED29 /* [CP] Check Pods Manifest.lock */,
 				506355201DDFD8F800AEC84B /* Sources */,
 				506355211DDFD8F800AEC84B /* Frameworks */,
 				506355221DDFD8F800AEC84B /* Resources */,
 				31150A5D5063798F57F1891F /* [CP] Embed Pods Frameworks */,
 				52906016A13EE11443B21DC4 /* [CP] Copy Pods Resources */,
+				1CAE927C893ED2449AA7A2BA /* 📦 Embed Pods Frameworks */,
+				33A58A3FF654127F3DC98235 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -426,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04E85D511DE0D2E6007DA2E7 /* Feed.storyboard in Resources */,
+				D749D62E1DE11A28000A6247 /* indicator.png in Resources */,
 				5063553A1DDFD8F800AEC84B /* LaunchScreen.storyboard in Resources */,
 				04E85D5A1DE0D44C007DA2E7 /* Images.xcassets in Resources */,
 				50A3AACA1DE0DB7E008C5CCD /* CustomSnippetView.xib in Resources */,
@@ -433,12 +443,28 @@
 				506355371DDFD8F800AEC84B /* Assets.xcassets in Resources */,
 				04E85D531DE0D2F4007DA2E7 /* Detail.storyboard in Resources */,
 				506355321DDFD8F800AEC84B /* Main.storyboard in Resources */,
+				D749D62C1DE11030000A6247 /* navHeader.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1CAE927C893ED2449AA7A2BA /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		31150A5D5063798F57F1891F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -452,6 +478,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33A58A3FF654127F3DC98235 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FD37E2C92FCF99FA456188A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		52906016A13EE11443B21DC4 /* [CP] Copy Pods Resources */ = {
