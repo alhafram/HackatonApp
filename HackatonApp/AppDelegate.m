@@ -28,6 +28,11 @@
 //    
 //    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     [GMSServices provideAPIKey:@"AIzaSyAHKH9Yai6XPfUx692OsN8XJOJ8Qavbcdw"];
+    HANMRoutesComponent* route = [[HANMRoutesComponent alloc] initWithNetManager:[HANetworkManager sharedInstance]];
+    [route getAllRouteseWithCompletionBlock:^(BOOL success, NSError *error, id responseData) {
+        [[HAParseManager sharedInstance] parseRouteDictionary:responseData];
+    }];
+    
 
     return YES;
 }

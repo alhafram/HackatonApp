@@ -32,6 +32,7 @@
 		50A3AAC91DE0DB7E008C5CCD /* CustomSnippetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3AAC71DE0DB7E008C5CCD /* CustomSnippetView.m */; };
 		50A3AACA1DE0DB7E008C5CCD /* CustomSnippetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A3AAC81DE0DB7E008C5CCD /* CustomSnippetView.xib */; };
 		50A3AACE1DE1068A008C5CCD /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A3AACD1DE1068A008C5CCD /* DetailTableViewController.swift */; };
+		50A3AAD11DE108A4008C5CCD /* MapRouteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3AAD01DE108A4008C5CCD /* MapRouteView.m */; };
 		64CB7BE1D20E4FFF6AE11499 /* libPods-HackatonApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD12F85126459DE4DB05864 /* libPods-HackatonApp.a */; };
 		D709A2581DE01FD400F42086 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2571DE01FD400F42086 /* CoreDataManager.swift */; };
 		D709A2611DE0281100F42086 /* Node+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709A2591DE0281100F42086 /* Node+CoreDataClass.swift */; };
@@ -93,6 +94,8 @@
 		50A3AAC71DE0DB7E008C5CCD /* CustomSnippetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomSnippetView.m; path = HackatonApp/CustomSnippetView.m; sourceTree = SOURCE_ROOT; };
 		50A3AAC81DE0DB7E008C5CCD /* CustomSnippetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomSnippetView.xib; path = HackatonApp/CustomSnippetView.xib; sourceTree = SOURCE_ROOT; };
 		50A3AACD1DE1068A008C5CCD /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		50A3AACF1DE108A4008C5CCD /* MapRouteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapRouteView.h; sourceTree = "<group>"; };
+		50A3AAD01DE108A4008C5CCD /* MapRouteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapRouteView.m; sourceTree = "<group>"; };
 		9376501FD978EF51448B65F7 /* Pods-HackatonApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D4C6DEB739557E9E51A7FD3E /* Pods-HackatonApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackatonApp/Pods-HackatonApp.release.xcconfig"; sourceTree = "<group>"; };
 		D709A2571DE01FD400F42086 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 				04E85D541DE0D33D007DA2E7 /* HAFeedCell.h */,
 				04E85D551DE0D33D007DA2E7 /* HAFeedCell.m */,
 				04E85D561DE0D33D007DA2E7 /* HAFeedCell.xib */,
+				50A3AACF1DE108A4008C5CCD /* MapRouteView.h */,
+				50A3AAD01DE108A4008C5CCD /* MapRouteView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -503,6 +508,7 @@
 				04E85D2B1DE01C98007DA2E7 /* HANMBaseComponent.m in Sources */,
 				04E85D391DE0258B007DA2E7 /* HASaveManager.m in Sources */,
 				50A3AACE1DE1068A008C5CCD /* DetailTableViewController.swift in Sources */,
+				50A3AAD11DE108A4008C5CCD /* MapRouteView.m in Sources */,
 				04C335B71DE0050C005D633B /* Database.swift in Sources */,
 				D709A2641DE0281100F42086 /* RouteCategory+CoreDataProperties.swift in Sources */,
 				04E85D351DE01D9D007DA2E7 /* NSDictionary+Helper.m in Sources */,

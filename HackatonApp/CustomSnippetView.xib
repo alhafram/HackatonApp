@@ -35,8 +35,8 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="snippet" destination="0rz-7H-OKk" id="Rum-AN-CNu"/>
-                <outlet property="title" destination="fQ3-0T-wKk" id="w0V-jT-XVz"/>
+                <outlet property="snippet" destination="0rz-7H-OKk" id="fvg-Zn-MSb"/>
+                <outlet property="title" destination="fQ3-0T-wKk" id="b37-NB-mho"/>
             </connections>
             <point key="canvasLocation" x="-56" y="286"/>
         </view>
