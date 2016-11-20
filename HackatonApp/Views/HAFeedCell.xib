@@ -53,7 +53,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="disclosure" translatesAutoresizingMaskIntoConstraints="NO" id="BFh-Z2-T42"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="disclosure" translatesAutoresizingMaskIntoConstraints="NO" id="BFh-Z2-T42"/>
                         </subviews>
                         <color key="backgroundColor" red="0.17254901960784313" green="0.12156862745098039" blue="0.14901960784313725" alpha="0.5" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -71,6 +71,7 @@
                             <constraint firstItem="BFh-Z2-T42" firstAttribute="centerY" secondItem="n09-UJ-11F" secondAttribute="centerY" id="fzd-ge-Hzr"/>
                             <constraint firstItem="UVv-fB-ylS" firstAttribute="leading" secondItem="n09-UJ-11F" secondAttribute="leading" constant="12" id="mnq-mj-S9S"/>
                             <constraint firstItem="eIT-mh-GaY" firstAttribute="leading" secondItem="UVv-fB-ylS" secondAttribute="trailing" constant="6" id="pWU-93-9S3"/>
+                            <constraint firstItem="BFh-Z2-T42" firstAttribute="leading" secondItem="LqI-oP-t0O" secondAttribute="trailing" constant="8" id="tBF-p7-exs"/>
                         </constraints>
                     </view>
                 </subviews>

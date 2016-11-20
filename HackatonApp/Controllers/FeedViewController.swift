@@ -62,6 +62,19 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         self.prepreNavigationBar()
         self.prepareSegmentedControl()
+        NotificationCenter.default.addObserver(self, selector: #selector(updateUI), name: NSNotification.Name(rawValue: "UPDATE_UI"), object: nil)
+    }
+    
+    func updateUI() -> Void {
+//        RouteManager.instance.getRoutes()
+        self.tableView.reloadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.barTintColor = UIColor.red
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.isHidden = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -90,5 +103,11 @@ extension FeedViewController {
     
     @objc(tableView:heightForRowAtIndexPath:) func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
+    }
+    
+    @objc(tableView:didSelectRowAtIndexPath:) func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = UIStoryboard.init(name: "Detail", bundle: nil).instantiateViewController(withIdentifier: "DetailTableViewController") as! DetailTableViewController
+        vc.route = RouteManager.instance.getRoutes()?[indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

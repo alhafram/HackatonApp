@@ -20,6 +20,8 @@ extension UINavigationBar {
         let bottomBorderRect = CGRect(x: 0, y: frame.height, width: frame.width, height: height)
         let bottomBorderView = UIView(frame: bottomBorderRect)
         bottomBorderView.backgroundColor = color
+        bottomBorderView.alpha = 0
+        
         addSubview(bottomBorderView)
     }
 }

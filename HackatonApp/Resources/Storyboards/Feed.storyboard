@@ -10,7 +10,7 @@
         <scene sceneID="AzX-W4-4bg">
             <objects>
                 <navigationController id="P0a-62-Yau" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Wmf-IB-tsn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Wmf-IB-tsn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -35,7 +35,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xqL-CH-v5l"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wc7-qo-qiK">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rCh-fi-B2A">

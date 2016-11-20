@@ -56,44 +56,10 @@
     UIView* _mapForView;
 }
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NSArray* arr = [[RouteManager instance] getRoutes];
-    
-    for (RouteModel* rm in arr) {
-        NSLog(@"ID: %lld", rm.obj_id);
-        NSLog(@"Name: %@", rm.name);
-        NSLog(@"Rating: %lld", rm.rating);
-        NSLog(@"Duration: %lld", rm.duration);
-        NSLog(@"Price: %lld", rm.price);
-        NSLog(@"Desc: %@", rm.descr);
-        
-        for (UIImage* img in rm.gallery) {
-            NSLog(@"%@", img.description);
-        }
-        
-        for (RouteCategory* rc in rm.category) {
-            NSLog(@"Category name: %@", rc.name);
-            NSLog(@"Category id: %lld", rc.obj_id);
-        }
-        
-        for (Node* node in rm.points) {
-            NSLog(@"Node name: %@", node.name);
-            NSLog(@"Node id: %lld", node.obj_id);
-            NSLog(@"Node time: %@", node.time);
-            NSLog(@"Node pin: %@", node.pin);
-            NSLog(@"Node coord: %@", node.coordinate);
-            
-        }
-        
-        NSLog(@"--------------------------");
-    }
-    
-    HANMRoutesComponent* r = [[HANMRoutesComponent alloc] initWithNetManager:[HANetworkManager sharedInstance]];
-    [r getAllRouteseWithCompletionBlock:^(BOOL success, NSError *error, id responseData) {
-        [[HAParseManager sharedInstance] parseRouteDictionary:responseData];
-    }];
+
     
     _mapForView = [[UIView alloc]  initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds) / 2)];
     _mapView = [[GMSMapView alloc] initWithFrame:CGRectMake(0, 0, _mapForView.frame.size.width, _mapForView.frame.size.height)];
